@@ -2,7 +2,7 @@ import time
 import datetime
 from io import BytesIO
 
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, FeatureNotFound
 from PIL import Image
 from requests import auth, get
 
@@ -43,6 +43,16 @@ class VAPIXCamera:
             results.update(dictionary)
         return results
 
+    @staticmethod
+    def __parse_response_text(text: str):
+        """
+        Parse response text with a robust parser fallback.
+        """
+        try:
+            return BeautifulSoup(text, features="lxml")
+        except FeatureNotFound:
+            return BeautifulSoup(text, features="html.parser")
+
     def __cmd(self, payload: dict):
         """
         Function used to send commands to the camera
@@ -60,7 +70,7 @@ class VAPIXCamera:
                        params=VAPIXCamera.__merge(payload, args))
 
         if (response.status_code != 200) and (response.status_code != 204):
-            soup = BeautifulSoup(response.text, features="lxml")
+            soup = self.__parse_response_text(response.text)
             print('%s', soup.get_text())
             if response.status_code == 401:
                 exit(1)
@@ -141,7 +151,7 @@ class VAPIXCamera:
                        auth=auth.HTTPDigestAuth(self.__username, self.__password), verify=False)
 
         if response.status_code != 200:
-            soup = BeautifulSoup(response.text, features="lxml")
+            soup = self.__parse_response_text(response.text)
             print('%s', soup.get_text())
             if response.status_code == 401:
                 exit(1)
@@ -227,6 +237,37 @@ class VAPIXCamera:
 
         """
         return self.__cmd({'query': 'presetposcam'})
+    def list_all_preset(self):
+        """
+        List all available presets position.
+
+        Returns:
+            Returns the list of all presets positions.
+
+        """
+        response = self.__cmd({'query': 'presetposall'})
+        soup = self.__parse_response_text(response.text)
+        resp_presets = soup.text.split('\n')
+        presets = []
+
+        for i in range(1, len(resp_presets) - 1):
+            preset = resp_presets[i].split("=")
+            presets.append((int(preset[0].split('presetposno')[1]), preset[1].rstrip('\r')))
+
+        return presets
+    
+    def go_to_server_preset_name(self, name: str, speed: int):
+        """
+        Move to the position associated with the preset on server.
+
+        Args:
+            name: name of preset position server.
+            speed: speed move camera.
+
+        Returns:
+            Returns the response from the device to the command sent
+        """
+        return self.__cmd({'gotoserverpresetname': name, 'speed': speed})
     
     
 
@@ -235,11 +276,56 @@ class VAPIXCamera:
         """
         Wait until the camera has stopped moving.
         """
+        started_moving = False
+        for i in range(10):
+            if self.get_status()[0] == 'no':
+                time.sleep(0.1)
+                #print("Not Moving")
+            else:
+                started_moving = True
+                break
+
         is_moving = self.get_status()[0]
         while is_moving != 'no':
+            #print("Moving...")
             time.sleep(0.1)
             is_moving = self.get_status()[0]
+        #print("Focusing...")
         self.wait_focus()
+        #print("Done focusing.")
+
+
+    def wait_focus(self):
+        """
+        Check up to 10 times if the focus value is changing
+        
+        if it is, wait until it doesn't change for two consecutive checks.
+        """
+        is_focusing = False
+        focus = int(self.get_optics_data()['focus'])
+        for i in range(10):  # Check focus status multiple times to confirm
+            if focus == int(self.get_optics_data()['focus']):
+                time.sleep(0.1)
+                # print(f"Focus check {i+1}/10: {focus} (not changing)")
+            else:
+                is_focusing = True
+                break
+        if is_focusing:
+                #print("actually focusing")
+                while True:
+                    if focus != int(self.get_optics_data()['focus']):
+                        focus = int(self.get_optics_data()['focus'])
+                        time.sleep(0.5)
+                        # print(f"Waiting for focus to stabilize: {focus}")
+                    else:
+                        time.sleep(1)
+                        if focus == int(self.get_optics_data()['focus']):
+                            # print(f"Focus stabilized at: {focus}")
+                            return
+                        # else:
+                            # print(f"Focus changed again, continuing to wait: {focus}"   )
+
+
 
     # def get_focus_status(self):
     #     """
@@ -266,34 +352,7 @@ class VAPIXCamera:
                 optics[key.strip()] = value.strip()
         return optics
     
-    def wait_focus(self):
-        """
-        Check up to 10 times if the focus value is changing
-        
-        if it is, wait until it doesn't change for two consecutive checks.
-        """
-        is_focusing = False
-        focus = int(self.get_optics_data()['focus'])
-        for i in range(10):  # Check focus status multiple times to confirm
-            if focus == int(self.get_optics_data()['focus']):
-                time.sleep(0.1)
-                # print(f"Focus check {i+1}/10: {focus} (not changing)")
-            else:
-                is_focusing = True
-                break
-        if is_focusing:
-                while True:
-                    if focus != int(self.get_optics_data()['focus']):
-                        focus = int(self.get_optics_data()['focus'])
-                        time.sleep(0.5)
-                        # print(f"Waiting for focus to stabilize: {focus}")
-                    else:
-                        time.sleep(1)
-                        if focus == int(self.get_optics_data()['focus']):
-                            # print(f"Focus stabilized at: {focus}")
-                            return
-                        # else:
-                            # print(f"Focus changed again, continuing to wait: {focus}"   )
+
 
     def get_limits(self):
         r = self.__cmd({'query': 'limits'})
@@ -304,11 +363,12 @@ class VAPIXCamera:
                 limits[k.strip()] = v.strip()
         return limits
 
-    def save_image_with_metadata(self, image, timestamp, position, detected):
+    def save_image_with_metadata(self, path, image, timestamp, position, detected, mask=False):
         """
         Save image from camera with metadata including position and detection status.
         
         Args:
+            path: directory path where the image will be saved
             timestamp: timestamp string for the filename
             detected: boolean indicating if something was detected (True/False)
         
@@ -324,11 +384,16 @@ class VAPIXCamera:
         timestamp = timestamp.strftime("%Y%m%d_%H%M%S")
 
         # Format filename: time_{timestamp}_p:{pan},t:{tilt}_z:{zoom}_{yes/no}.jpg
-        filename = f"{timestamp}_({pan},{tilt},{zoom})_{detection_str}.jpg"
+        if mask:
+            filename = f"{timestamp}_({pan},{tilt},{zoom})_{detection_str}_mask.jpg"
+        else:
+            filename = f"{timestamp}_({pan},{tilt},{zoom})_{detection_str}.jpg"
         filepath = os.path.join(path, filename)
+        directory = os.path.dirname(filepath)
         
         # Save image
         if image:
+            os.makedirs(directory, exist_ok=True)
             image.save(filepath)
             print(f"Image saved: {filepath}")
             return filepath
@@ -338,40 +403,13 @@ class VAPIXCamera:
 
 
 if __name__ == "__main__":
-    which_cam = "forst"
-    if which_cam == "rent":
-        ip = '195.60.68.14:11066'
-        user='VLTuser'
-        password='SrJWWEhk'
-    else:
-        ip = '192.44.18.67'
-        user='lennart'
-        password='7v1wuUGGsE3W2R3GpGbg'
-
-    #url = f"http://{ip_rent}/axis-cgi/com/ptz.cgi"
+    ip = '192.44.18.67'
+    user='lennart'
+    password='7v1wuUGGsE3W2R3GpGbg'
     
     cam=VAPIXCamera(ip, user, password,use_https=False)
-    
-    preset_no = 1
-    while True:
-        print(f"Moving to preset {preset_no}...")
-        cam.go_to_server_preset_number(preset_no, 100)
-        cam.wait_until_stopped()
-        pos = cam.get_ptz_status()
-        print(f"Position: {pos}")
-
-        preset_no = (preset_no + 1)
-        if preset_no == len(cam.list_preset_device().text.splitlines()):
-            preset_no = 1
-        time.sleep(5)
-    # print(cam.get_ptz_status())
-    # time.sleep(3)
-    # print(cam.get_ptz_status())
-    # image = cam.get_current_image()
-    # image.save(os.path.join(path, "test_image.jpg"))
-    # timestamp = datetime.datetime.now()
-    # print(timestamp)
-    # cam.save_image_with_metadata(image, timestamp, True)
+    # print(cam.list_all_preset())
+    cam.go_to_server_preset_number(31, 100)
 
 
 

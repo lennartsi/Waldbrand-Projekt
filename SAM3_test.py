@@ -4,18 +4,25 @@ from PIL import Image
 import requests
 import numpy as np
 import matplotlib
-from Camera_test import VAPIXCamera
+import pandas as pd
+import io
+
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
+df = pd.read_parquet("hf://datasets/leon-se/ForestFireInsights-Eval/data/train-00000-of-00001.parquet")
 
-model = Sam3Model.from_pretrained("facebook/sam3").to(device)
-processor = Sam3Processor.from_pretrained("facebook/sam3")
 
-ip='195.60.68.14:11115'
-url = f"http://{ip}/axis-cgi/com/ptz.cgi"
-user='VLTuser'
-password='pMycBxxn'
-cam=VAPIXCamera(ip, user, password,use_https=False)
+def segment(image, text_prompt):
+        inputs = processor(images=image, text=text_prompt, return_tensors="pt").to(device)
+        with torch.no_grad():
+            outputs = model(**inputs)
+        results = processor.post_process_instance_segmentation(
+            outputs,
+            threshold=0.5,
+            mask_threshold=0.5,
+            target_sizes=inputs.get("original_sizes").tolist()
+        )[0]
+        return results
 
 def overlay_masks(image, masks):
     image = image.convert("RGBA")
@@ -35,6 +42,7 @@ def overlay_masks(image, masks):
         overlay.putalpha(alpha)
         image = Image.alpha_composite(image, overlay)
     return image
+
 def get_lowest_point(mask):
     """
     Given a binary mask, returns the coordinates of an arbitrary lowest point in the mask.
@@ -45,69 +53,34 @@ def get_lowest_point(mask):
     lowest_point = coords[torch.argmax(coords[:, 0])]
     return lowest_point
 
-for degree in range(225, 360, 45):
-    cam.absolute_move(degree, 0, 1, 100)
-    cam.wait_until_stopped()
-    image=cam.get_current_image()
-
-    # Segment using text prompt
-    inputs = processor(images=image, text="a digital clock displaying the time with blue-white numbers", return_tensors="pt").to(device)
-
-    with torch.no_grad():
-        outputs = model(**inputs)
-
-    # Post-process results
-    results = processor.post_process_instance_segmentation(
-        outputs,
-        threshold=0.5,
-        mask_threshold=0.5,
-        target_sizes=inputs.get("original_sizes").tolist()
-    )[0]
-    print(type(results["masks"]))
-    print(results["masks"].shape)
-    print(results["masks"].dtype)
-    if len(results["masks"]) == 0:
-        print("Camera position:", cam.get_ptz_status())
-        print("No objects found")  
-        image.show()
-        continue
-    else:
-        print("Camera position:", cam.get_ptz_status())
-        print(f"Found {len(results['masks'])} objects")
-        for i in range(len(results["masks"])):
-            lowest_point=get_lowest_point(results["masks"][i])
-            print(f"Lowest point of mask {i}: {lowest_point}")
-            cam.area_zoom(lowest_point[1].item(), lowest_point[0].item(),1000, 100)
-            cam.wait_until_stopped()
-            cam.get_current_image().show()
-        overlay_masks(image, results["masks"]).show()
-        exit(0)
-
-# Results contain:
-# - masks: Binary masks resized to original image size
-# - boxes: Bounding boxes in absolute pixel coordinates (xyxy format)
-# - scores: Confidence scores
 
 
+if __name__ == "__main__":
+    from Camera_test import VAPIXCamera
+    
+    # Load model and processor only when script runs
+    model = Sam3Model.from_pretrained("facebook/sam3").to(device)
+    processor = Sam3Processor.from_pretrained("facebook/sam3")
+    # Access one row (example: row index 1)
 
+    row = df.iloc[1]
 
-#overlay_masks(image, results["masks"]).show()
+    # Extract raw bytes
+    img_bytes = row["image"]["bytes"]
 
+    # Convert to PIL Image
+    image = Image.open(io.BytesIO(img_bytes))
 
-# import torch
-# from PIL import Image
-# import requests
-# from transformers import SamModel, SamProcessor
-# import os
+    results = segment(image, "smoke")
+    overlay_masks(image, results["masks"]).show()
+    # which_cam = "rent"
+    # if which_cam == "rent":
+    #     ip = '195.60.68.14:11066'
+    #     user='VLTuser'
+    #     password='SrJWWEhk'
+    # else:
+    #     ip = '192.44.18.67'
+    #     user='lennart'
+    #     password='7v1wuUGGsE3W2R3GpGbg'
 
-# # Get your token from environment
-# token = os.environ.get('HF_TOKEN')
-# print("HF token from env:", os.environ.get("HUGGINGFACE_HUB_TOKEN"))
-# # Try loading SAM 3 (if you have access)
-# try:
-#     model_id = "facebook/sam3"
-#     processor = SamProcessor.from_pretrained(model_id, token=token)
-#     model = SamModel.from_pretrained(model_id, token=token)
-#     print("✅ SAM 3 loaded successfully!")
-# except Exception as e:
-#     print(f"❌ SAM 3 failed: {e}")
+    # cam=VAPIXCamera(ip, user, password,use_https=False)
