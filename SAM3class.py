@@ -95,16 +95,38 @@ class Sam3:
 
 if __name__ == "__main__":
     sam3 = Sam3()
-    folder_path = r"U:\Fraunhofer Waldbrand\Testbilder\Kamera_Balkon\Images_smoke"
-    positives = 0
-    negatives = 0
+    # folder_path = r"\\netappn1\siethoff\Fraunhofer Waldbrand\Testbilder\Brand_Tennenlohe_2025\original"
+    # cropped_path = r"\\netappn1\siethoff\Fraunhofer Waldbrand\Testbilder\Brand_Tennenlohe_2025\cropped_T=0.4"
+    # no_smoke_path = r"\\netappn1\siethoff\Fraunhofer Waldbrand\Testbilder\Brand_Tennenlohe_2025\no_smoke"
+    # positives = 0
+    # negatives = 0
+    # # os.makedirs(cropped_path, exist_ok=True)
     
-    for image_path in Path(folder_path).iterdir():
-        if image_path.is_file() and image_path.suffix.lower() in [".png", ".jpg", ".jpeg"] and "mask" not in image_path.name:
+    # for image_path in Path(no_smoke_path).iterdir():
+    #     if image_path.is_file() and image_path.suffix.lower() in [".png", ".jpg", ".jpeg"] and "mask" not in image_path.name:
+    #         image = Image.open(image_path).convert("RGB")
+    #         results = sam3.segment(image, "smoke")
+    #         if results['masks'].shape[0]>0:
+    #             i=0
+    #             for mask in results['masks']:
+    #                 cropped_image = sam3.crop_image(image, mask)
+    #                 if cropped_image is not None:
+    #                     cropped_image.save(Path(cropped_path) / f"mask{i}_{image_path.name}")
+    #                     positives += 1
+    #                 i += 1
+    #         else:
+    #             negatives += 1
+    #             image.save(Path(no_smoke_path) / image_path.name)
+    # print(f"Total images: {positives + negatives}, Positives: {positives}, Negatives: {negatives}")
+
+    path = Path(r"\\netappn1\siethoff\Fraunhofer Waldbrand\feuerwehrtest_orginal")
+
+    for image_path in path.iterdir():
+        image_path = Path(r"\\netappn1\siethoff\Fraunhofer Waldbrand\feuerwehrtest_orginal\20260425_153617_(118.01,0.0,754.0)_yes_mask1.jpg")
+        if image_path.is_file() and image_path.suffix.lower() in [".png", ".jpg", ".jpeg"] and "mask" in image_path.name:
             image = Image.open(image_path).convert("RGB")
             results = sam3.segment(image, "smoke")
             if results['masks'].shape[0]>0:
-                sam3.crop_image(image, results['masks'][0]).save(image_path.parent / f"cropped_{image_path.name}")
-            else:
-                negatives += 1
-    print(f"Total images: {positives + negatives}, Positives: {positives}, Negatives: {negatives}")
+                overlayed_image = sam3.overlay_masks(image, results['masks'])
+                overlayed_image.save(Path(path) / f"overlay_{image_path.name}")
+        break

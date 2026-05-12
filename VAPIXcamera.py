@@ -213,20 +213,6 @@ class VAPIXCamera:
         """
         return self.__cmd({'gotoserverpresetno': number, 'speed': speed})
     
-    def go_to_device_preset(self, preset_pos: int, speed: int):
-        """
-        Bypasses the preset pos interface and tells the device to go directly to the preset
-        position number stored in the device, where is a device-specific preset position number.
-
-        Args:
-            preset_pos: number of preset position device
-            speed: speed move camera
-
-        Returns:
-            Returns the response from the device to the command sent
-
-        """
-        return self.__cmd({'gotodevicepreset': preset_pos, 'speed': speed})
     
     def list_preset_device(self):
         """
@@ -363,7 +349,7 @@ class VAPIXCamera:
                 limits[k.strip()] = v.strip()
         return limits
 
-    def save_image_with_metadata(self, path, image, timestamp, position, detected, mask=False):
+    def save_image_with_metadata(self, path, image, timestamp, position, detected, mask=None):
         """
         Save image from camera with metadata including position and detection status.
         
@@ -384,10 +370,13 @@ class VAPIXCamera:
         timestamp = timestamp.strftime("%Y%m%d_%H%M%S")
 
         # Format filename: time_{timestamp}_p:{pan},t:{tilt}_z:{zoom}_{yes/no}.jpg
-        if mask:
-            filename = f"{timestamp}_({pan},{tilt},{zoom})_{detection_str}_mask.jpg"
-        else:
+        if mask==None:
             filename = f"{timestamp}_({pan},{tilt},{zoom})_{detection_str}.jpg"
+            path = os.path.join(path, "original")
+        else:
+            filename = f"{timestamp}_({pan},{tilt},{zoom})_{detection_str}_mask{mask}.jpg"
+            path = os.path.join(path, "cropped")
+
         filepath = os.path.join(path, filename)
         directory = os.path.dirname(filepath)
         
@@ -403,14 +392,8 @@ class VAPIXCamera:
 
 
 if __name__ == "__main__":
-    ip = '192.44.18.67'
-    user='lennart'
-    password='7v1wuUGGsE3W2R3GpGbg'
-    
-    cam=VAPIXCamera(ip, user, password,use_https=False)
-    # print(cam.list_all_preset())
-    cam.go_to_server_preset_number(31, 100)
-
+    cam = VAPIXCamera("192.44.18.67", "lennart", "7v1wuUGGsE3W2R3GpGbg", use_https=False)
+    print(cam.get_limits())
 
 
 
