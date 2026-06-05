@@ -15,7 +15,7 @@ class SmokeAnalysisAnswer(BaseModel):
     decision: Optional[bool]
 
 class VLM:
-    def __init__(self, model_id="Qwen/Qwen3-VL-8B-Instruct", device=None):
+    def __init__(self, model_id="Qwen/Qwen3-VL-8B-Instruct", adapter_path=None, device=None):
         self.device = device or ("cuda" if torch.cuda.is_available() else "cpu")
         self.processor = AutoProcessor.from_pretrained(model_id)
         
@@ -32,8 +32,12 @@ class VLM:
             device_map="auto",
             # quantization_config=quantization_config,
         )
-        adapter_path = r"U:\Fraunhofer Waldbrand\Fine_tuning\Adapters\qwen3-8b-instruct-fine-tune-no-reasoning-V8"
-        self.model.load_adapter(adapter_path)
+        if adapter_path:
+            self.model.load_adapter(adapter_path)
+        else:
+            adapter_path = r"U:\Fraunhofer Waldbrand\Fine_tuning\Adapters\qwen3-8b-instruct-fine-tune-no-reasoning-V8"
+            self.model.load_adapter(adapter_path)
+        
         self._sync_lora_to_base_devices()
 
     def _sync_lora_to_base_devices(self):

@@ -7,6 +7,7 @@ from astral.sun import sun
 from operator import add
 import time
 from detection_cutoff import detection_logic
+from math import log
 
 def local_to_utc(time_str):
     '''Converts local time stirng to UTC time string. Check DST for provided date. If none provided, check for current date.'''
@@ -91,13 +92,54 @@ def frequency_T_RH(temp, rh):
     for t in temp:
         if t<0:
             temps[0] += 1
-        elif t>20:
+        elif t>=20:
             temps[-1] += 1
         else:
             temps[int(t)] += 1
     for r in rh:
         rhs[int(r//10)] += 1
     return temps, rhs
+
+def get_dew_point_c(t_air_c, rel_humidity):
+    """Compute the dew point in degrees Celsius
+    :param t_air_c: current ambient temperature in degrees Celsius
+    :type t_air_c: float
+    :param rel_humidity: relative humidity in %
+    :type rel_humidity: float
+    :return: the dew point in degrees Celsius
+    :rtype: float
+    """
+    A = 17.27
+    B = 237.7
+    alpha = ((A * t_air_c) / (B + t_air_c)) + log(rel_humidity/100.0)
+    return (B * alpha) / (A - alpha)
+
+def plot_dew_point_data(raw_data, start_end_date=None):
+    import matplotlib.pyplot as plt
+    dates = []
+    dew_points = []
+    temp_rh_data = []
+    dew_point_depression = []
+    for image_path, data in raw_data.items():
+        if start_end_date and data[3][:8] not in [date.strftime("%Y%m%d") for date in (start_end_date[0] + timedelta(days=i) for i in range((start_end_date[1] - start_end_date[0]).days + 1))]:
+            continue
+        dew_points.append(get_dew_point_c(data[1], data[2]))
+        temp_rh_data.append((data[1], data[2]))
+    for i in range(len(dew_points)):
+        dew_point_depression.append(temp_rh_data[i][0] - dew_points[i])
+    dew_point_buckets = [0]*20
+    for dp in dew_point_depression:
+        if dp < 0:
+            dew_point_buckets[0] += 1
+        elif dp >= 20:
+            dew_point_buckets[-1] += 1
+        else:
+            dew_point_buckets[int(dp)] += 1
+    plt.bar(range(len(dew_point_buckets)), dew_point_buckets)
+    plt.xlabel("Dew Point Depression (°C)")
+    plt.ylabel("Frequency")
+    plt.show()
+
 
 def get_sunrise_sunset(date):
     location = LocationInfo("Nürnberg", "Germany", "Europe/Berlin", 49.4521, 11.0767)
@@ -452,12 +494,14 @@ if __name__ == "__main__":
     data_path = Path(r"\\netappn1\SCS\50_Abteilungen\54_RSA\Sicherheitsforschung\smart_forrest_fire\Images\Smoke_T=0.5_VLM\Forestfire\cropped")
     data_path = Path(r"\\netappn1\SCS\50_Abteilungen\54_RSA\Sicherheitsforschung\smart_forrest_fire\Images\Smoke_T=0.5_VLM\Chimney_cloud_fog_industrial\cropped")
 
-    update_all()
+    # update_all()
 
-    with open("raw_data_Chimney.json", "r") as f:
+    with open("raw_data_Forestfire.json", "r") as f:
         raw_data = json.load(f)
 
     # find_cutoffs(raw_data)
+
+    # plot_dew_point_data(raw_data, start_end_date=(datetime(2026, 5, 1), datetime.now()))
 
     plot_frequencies(raw_data, start_end_date=(datetime(2026, 5, 1), datetime.now()))
 

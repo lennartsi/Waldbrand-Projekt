@@ -1,0 +1,1830 @@
+2026-05-21 22:18:29,399 | ERROR | detection_app | Detection failed (attempt 1/3): name 'start_time' is not defined
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 162, in <module>
+    elapsed_time = (datetime.datetime.now() - start_time).total_seconds()
+                                              ^^^^^^^^^^
+NameError: name 'start_time' is not defined
+2026-05-21 22:18:29,413 | INFO | detection_app | Retrying in 5s...
+2026-05-21 22:18:34,415 | ERROR | detection_app | Detection failed (attempt 2/3): name 'start_time' is not defined
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 162, in <module>
+    elapsed_time = (datetime.datetime.now() - start_time).total_seconds()
+                                              ^^^^^^^^^^
+NameError: name 'start_time' is not defined
+2026-05-21 22:18:34,436 | INFO | detection_app | Retrying in 10s...
+2026-05-21 22:18:44,440 | ERROR | detection_app | Detection failed (attempt 3/3): name 'start_time' is not defined
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 162, in <module>
+    elapsed_time = (datetime.datetime.now() - start_time).total_seconds()
+                                              ^^^^^^^^^^
+NameError: name 'start_time' is not defined
+2026-05-21 22:18:44,464 | WARNING | detection_app | Frame failed (1/5 consecutive)
+2026-05-21 22:19:04,539 | ERROR | detection_app | Detection failed (attempt 1/3): name 'start_time' is not defined
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 162, in <module>
+    elapsed_time = (datetime.datetime.now() - start_time).total_seconds()
+                                              ^^^^^^^^^^
+NameError: name 'start_time' is not defined
+2026-05-21 22:19:04,573 | INFO | detection_app | Retrying in 5s...
+2026-05-21 22:19:09,589 | ERROR | detection_app | Detection failed (attempt 2/3): name 'start_time' is not defined
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 162, in <module>
+    elapsed_time = (datetime.datetime.now() - start_time).total_seconds()
+                                              ^^^^^^^^^^
+NameError: name 'start_time' is not defined
+2026-05-21 22:19:09,609 | INFO | detection_app | Retrying in 10s...
+2026-05-21 22:19:19,612 | ERROR | detection_app | Detection failed (attempt 3/3): name 'start_time' is not defined
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 162, in <module>
+    elapsed_time = (datetime.datetime.now() - start_time).total_seconds()
+                                              ^^^^^^^^^^
+NameError: name 'start_time' is not defined
+2026-05-21 22:19:19,640 | WARNING | detection_app | Frame failed (2/5 consecutive)
+2026-05-21 22:19:39,745 | ERROR | detection_app | Detection failed (attempt 1/3): name 'start_time' is not defined
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 162, in <module>
+    elapsed_time = (datetime.datetime.now() - start_time).total_seconds()
+                                              ^^^^^^^^^^
+NameError: name 'start_time' is not defined
+2026-05-21 22:19:39,771 | INFO | detection_app | Retrying in 5s...
+2026-05-21 22:19:44,775 | ERROR | detection_app | Detection failed (attempt 2/3): name 'start_time' is not defined
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 162, in <module>
+    elapsed_time = (datetime.datetime.now() - start_time).total_seconds()
+                                              ^^^^^^^^^^
+NameError: name 'start_time' is not defined
+2026-05-21 22:19:44,796 | INFO | detection_app | Retrying in 10s...
+2026-05-21 22:19:54,799 | ERROR | detection_app | Detection failed (attempt 3/3): name 'start_time' is not defined
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 162, in <module>
+    elapsed_time = (datetime.datetime.now() - start_time).total_seconds()
+                                              ^^^^^^^^^^
+NameError: name 'start_time' is not defined
+2026-05-21 22:19:54,821 | WARNING | detection_app | Frame failed (3/5 consecutive)
+2026-05-21 22:20:14,958 | ERROR | detection_app | Detection failed (attempt 1/3): name 'start_time' is not defined
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 162, in <module>
+    elapsed_time = (datetime.datetime.now() - start_time).total_seconds()
+                                              ^^^^^^^^^^
+NameError: name 'start_time' is not defined
+2026-05-21 22:20:14,986 | INFO | detection_app | Retrying in 5s...
+2026-05-21 22:20:19,989 | ERROR | detection_app | Detection failed (attempt 2/3): name 'start_time' is not defined
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 162, in <module>
+    elapsed_time = (datetime.datetime.now() - start_time).total_seconds()
+                                              ^^^^^^^^^^
+NameError: name 'start_time' is not defined
+2026-05-21 22:20:20,012 | INFO | detection_app | Retrying in 10s...
+2026-05-21 22:20:30,016 | ERROR | detection_app | Detection failed (attempt 3/3): name 'start_time' is not defined
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 162, in <module>
+    elapsed_time = (datetime.datetime.now() - start_time).total_seconds()
+                                              ^^^^^^^^^^
+NameError: name 'start_time' is not defined
+2026-05-21 22:20:30,040 | WARNING | detection_app | Frame failed (4/5 consecutive)
+2026-05-21 22:20:50,098 | ERROR | detection_app | Detection failed (attempt 1/3): name 'start_time' is not defined
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 162, in <module>
+    elapsed_time = (datetime.datetime.now() - start_time).total_seconds()
+                                              ^^^^^^^^^^
+NameError: name 'start_time' is not defined
+2026-05-21 22:20:50,123 | INFO | detection_app | Retrying in 5s...
+2026-05-21 22:20:55,126 | ERROR | detection_app | Detection failed (attempt 2/3): name 'start_time' is not defined
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 162, in <module>
+    elapsed_time = (datetime.datetime.now() - start_time).total_seconds()
+                                              ^^^^^^^^^^
+NameError: name 'start_time' is not defined
+2026-05-21 22:20:55,149 | INFO | detection_app | Retrying in 10s...
+2026-05-21 22:21:05,153 | ERROR | detection_app | Detection failed (attempt 3/3): name 'start_time' is not defined
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 162, in <module>
+    elapsed_time = (datetime.datetime.now() - start_time).total_seconds()
+                                              ^^^^^^^^^^
+NameError: name 'start_time' is not defined
+2026-05-21 22:21:05,176 | WARNING | detection_app | Frame failed (5/5 consecutive)
+2026-05-21 22:21:05,179 | CRITICAL | detection_app | Shutting down due to too many consecutive failures: name 'start_time' is not defined
+2026-05-21 22:21:05,307 | INFO | root | Successfully sent message to 5894386665
+2026-05-21 22:32:56,433 | INFO | detection_app | Currently nighttime. Detection loop paused.
+2026-05-22 00:00:00,060 | INFO | detection_app | Currently nighttime. Detection loop paused.
+2026-05-22 05:23:31,698 | INFO | detection_app | Starting detection loop.
+2026-05-22 05:43:20,095 | INFO | detection_app | Detection at Pos. 1.1 but no alarm triggered  (Temp: 8.5°C, RH: 94.0%, Precip: 0.0mm)
+2026-05-22 06:15:57,387 | INFO | detection_app | Detection at Pos. 1.2 but no alarm triggered  (Temp: 7.6°C, RH: 96.0%, Precip: 0.0mm)
+2026-05-22 06:22:37,960 | INFO | detection_app | Detection at Pos. 2.4 but no alarm triggered  (Temp: 7.6°C, RH: 96.0%, Precip: 0.0mm)
+2026-05-22 06:23:50,577 | INFO | detection_app | Detection at Pos. 2.7 but no alarm triggered  (Temp: 7.6°C, RH: 96.0%, Precip: 0.0mm)
+2026-05-22 06:34:30,086 | INFO | detection_app | Detection at Pos. 2.7 but no alarm triggered  (Temp: 7.6°C, RH: 96.0%, Precip: 0.0mm)
+2026-05-22 06:45:27,735 | INFO | detection_app | Detection at Pos. 2.8 but no alarm triggered  (Temp: 7.6°C, RH: 96.0%, Precip: 0.0mm)
+2026-05-22 06:48:02,819 | INFO | detection_app | Detection at Pos. 1.2 but no alarm triggered  (Temp: 7.6°C, RH: 96.0%, Precip: 0.0mm)
+2026-05-22 06:55:24,619 | INFO | detection_app | Detection at Pos. 2.7 but no alarm triggered  (Temp: 7.6°C, RH: 96.0%, Precip: 0.0mm)
+2026-05-22 11:47:08,472 | INFO | root | Starting broadcast to 3 subscribers.
+2026-05-22 11:47:08,816 | INFO | root | Successfully sent message to 5894386665
+2026-05-22 11:47:08,886 | INFO | root | Successfully sent message to 1361078892
+2026-05-22 11:47:08,948 | INFO | root | Successfully sent message to 8655257428
+2026-05-22 11:47:08,951 | INFO | detection_app | Detection at Pos. 1.13!  (Temp: 21.5°C, RH: 41.0%, Precip: 0.0mm) - Alarm triggered.
+2026-05-23 00:00:10,234 | INFO | detection_app | Currently nighttime. Detection loop paused.
+2026-05-23 05:22:28,651 | INFO | detection_app | Starting detection loop.
+2026-05-23 05:26:37,004 | INFO | detection_app | Detection at Pos. 2.10 but no alarm triggered  (Temp: 11.6°C, RH: 91.0%, Precip: 0.0mm)
+2026-05-23 06:05:44,089 | INFO | detection_app | Detection at Pos. 2.8 but no alarm triggered  (Temp: 11.6°C, RH: 91.0%, Precip: 0.0mm)
+2026-05-23 06:15:57,973 | INFO | detection_app | Detection at Pos. 2.8 but no alarm triggered  (Temp: 10.9°C, RH: 89.0%, Precip: 0.0mm)
+2026-05-23 06:20:54,447 | INFO | detection_app | Detection at Pos. 1.8 but no alarm triggered  (Temp: 10.9°C, RH: 89.0%, Precip: 0.0mm)
+2026-05-23 06:25:54,378 | INFO | detection_app | Detection at Pos. 2.7 but no alarm triggered  (Temp: 10.9°C, RH: 89.0%, Precip: 0.0mm)
+2026-05-23 06:46:58,843 | INFO | detection_app | Detection at Pos. 2.8 but no alarm triggered  (Temp: 10.9°C, RH: 89.0%, Precip: 0.0mm)
+2026-05-23 15:04:00,776 | INFO | root | Starting broadcast to 3 subscribers.
+2026-05-23 15:04:00,954 | INFO | root | Successfully sent message to 5894386665
+2026-05-23 15:04:01,029 | INFO | root | Successfully sent message to 1361078892
+2026-05-23 15:04:01,097 | INFO | root | Successfully sent message to 8655257428
+2026-05-23 15:04:01,100 | INFO | detection_app | Detection at Pos. 1.10!  (Temp: 27.1°C, RH: 35.0%, Precip: 0.0mm) - Alarm triggered.
+2026-05-24 00:00:16,243 | INFO | detection_app | Currently nighttime. Detection loop paused.
+2026-05-24 05:21:33,873 | INFO | detection_app | Starting detection loop.
+2026-05-24 06:02:24,913 | INFO | detection_app | Detection at Pos. 2.8 but no alarm triggered  (Temp: 11.6°C, RH: 93.0%, Precip: 0.0mm)
+2026-05-24 06:06:39,250 | INFO | detection_app | Detection at Pos. 1.7 but no alarm triggered  (Temp: 11.6°C, RH: 93.0%, Precip: 0.0mm)
+2026-05-24 20:06:17,316 | INFO | root | Starting broadcast to 3 subscribers.
+2026-05-24 20:06:17,887 | INFO | root | Successfully sent message to 5894386665
+2026-05-24 20:06:18,049 | INFO | root | Successfully sent message to 1361078892
+2026-05-24 20:06:18,184 | INFO | root | Successfully sent message to 8655257428
+2026-05-24 20:06:18,188 | INFO | detection_app | Detection at Pos. 1.1!  (Temp: 28.8°C, RH: 35.0%, Precip: 0.0mm) - Alarm triggered.
+2026-05-25 00:00:15,034 | INFO | detection_app | Currently nighttime. Detection loop paused.
+2026-05-25 05:20:24,508 | INFO | detection_app | Starting detection loop.
+2026-05-25 20:09:37,749 | INFO | root | Starting broadcast to 3 subscribers.
+2026-05-25 20:09:37,928 | INFO | root | Successfully sent message to 5894386665
+2026-05-25 20:09:38,052 | INFO | root | Successfully sent message to 1361078892
+2026-05-25 20:09:38,169 | INFO | root | Successfully sent message to 8655257428
+2026-05-25 20:09:38,173 | INFO | detection_app | Detection at Pos. 1.2!  (Temp: 28.8°C, RH: 27.0%, Precip: 0.0mm) - Alarm triggered.
+2026-05-26 00:00:18,908 | INFO | detection_app | Currently nighttime. Detection loop paused.
+2026-05-26 05:19:27,279 | INFO | detection_app | Starting detection loop.
+2026-05-26 05:42:26,681 | INFO | detection_app | Detection at Pos. 1.11 but no alarm triggered  (Temp: 12.4°C, RH: 87.0%, Precip: 0.0mm)
+2026-05-26 06:00:03,292 | INFO | detection_app | Detection at Pos. 1.6 but no alarm triggered  (Temp: 12.4°C, RH: 87.0%, Precip: 0.0mm)
+2026-05-26 06:40:59,010 | INFO | detection_app | Detection at Pos. 1.8 but no alarm triggered  (Temp: 11.5°C, RH: 88.0%, Precip: 0.0mm)
+2026-05-26 06:55:40,356 | INFO | detection_app | Detection at Pos. 2.7 but no alarm triggered  (Temp: 11.5°C, RH: 88.0%, Precip: 0.0mm)
+2026-05-26 07:00:53,025 | INFO | detection_app | Detection at Pos. 1.8 but no alarm triggered  (Temp: 11.5°C, RH: 88.0%, Precip: 0.0mm)
+2026-05-26 11:32:25,413 | INFO | detection_app | Starting detection loop.
+2026-05-26 11:52:41,061 | INFO | detection_app | Starting detection loop.
+2026-05-26 11:55:34,187 | INFO | detection_app | Starting detection loop.
+2026-05-26 19:03:11,719 | INFO | detection_app | Starting detection loop.
+2026-05-26 20:09:36,590 | INFO | detection_app | Detection at Pos. 1.2 but no alarm triggered  (Temp: 30.9°C, RH: 27.0%, Precip: 3276.7mm)
+2026-05-26 21:07:32,392 | INFO | detection_app | Currently nighttime. Detection loop paused.
+2026-05-27 00:00:19,876 | INFO | detection_app | Currently nighttime. Detection loop paused.
+2026-05-27 05:18:27,454 | INFO | detection_app | Starting detection loop.
+2026-05-27 05:56:57,003 | INFO | detection_app | Detection at Pos. 1.7 but no alarm triggered  (Temp: 12.9°C, RH: 94.0%, Precip: 3276.7mm)
+2026-05-27 06:11:59,209 | INFO | detection_app | Detection at Pos. 2.8 but no alarm triggered  (Temp: 13.5°C, RH: 91.0%, Precip: 3276.7mm)
+2026-05-27 06:16:45,114 | INFO | detection_app | Detection at Pos. 1.8 but no alarm triggered  (Temp: 13.5°C, RH: 91.0%, Precip: 3276.7mm)
+2026-05-27 06:21:26,962 | INFO | detection_app | Detection at Pos. 2.7 but no alarm triggered  (Temp: 13.5°C, RH: 91.0%, Precip: 3276.7mm)
+2026-05-27 06:25:02,119 | INFO | detection_app | Detection at Pos. 1.4 but no alarm triggered  (Temp: 13.5°C, RH: 91.0%, Precip: 3276.7mm)
+2026-05-27 13:13:55,393 | INFO | detection_app | Detection at Pos. 1.8 but no alarm triggered  (Temp: 28.1°C, RH: 36.0%, Precip: 3276.7mm)
+2026-05-27 18:20:23,146 | INFO | detection_app | Starting detection loop.
+2026-05-27 18:20:26,287 | ERROR | detection_app | Detection failed (attempt 1/3): cannot access local variable 'filepath' where it is not associated with a value
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 84, in <module>
+    detection_result, filepath = detection_orchestrator.detection_pipeline(pos_value)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 37, in detection_pipeline
+    return vlm_result, filepath
+                       ^^^^^^^^
+UnboundLocalError: cannot access local variable 'filepath' where it is not associated with a value
+2026-05-27 18:20:26,299 | INFO | detection_app | Retrying in 5s...
+2026-05-27 18:20:33,575 | ERROR | detection_app | Detection failed (attempt 2/3): cannot access local variable 'filepath' where it is not associated with a value
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 84, in <module>
+    detection_result, filepath = detection_orchestrator.detection_pipeline(pos_value)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 37, in detection_pipeline
+    return vlm_result, filepath
+                       ^^^^^^^^
+UnboundLocalError: cannot access local variable 'filepath' where it is not associated with a value
+2026-05-27 18:20:33,582 | INFO | detection_app | Retrying in 10s...
+2026-05-27 18:20:46,374 | ERROR | detection_app | Detection failed (attempt 3/3): cannot access local variable 'filepath' where it is not associated with a value
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 84, in <module>
+    detection_result, filepath = detection_orchestrator.detection_pipeline(pos_value)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 37, in detection_pipeline
+    return vlm_result, filepath
+                       ^^^^^^^^
+UnboundLocalError: cannot access local variable 'filepath' where it is not associated with a value
+2026-05-27 18:20:46,384 | WARNING | detection_app | Frame failed (1/5 consecutive)
+2026-05-27 18:21:08,775 | ERROR | detection_app | Detection failed (attempt 1/3): cannot access local variable 'filepath' where it is not associated with a value
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 84, in <module>
+    detection_result, filepath = detection_orchestrator.detection_pipeline(pos_value)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 37, in detection_pipeline
+    return vlm_result, filepath
+                       ^^^^^^^^
+UnboundLocalError: cannot access local variable 'filepath' where it is not associated with a value
+2026-05-27 18:21:08,785 | INFO | detection_app | Retrying in 5s...
+2026-05-27 18:21:16,572 | ERROR | detection_app | Detection failed (attempt 2/3): cannot access local variable 'filepath' where it is not associated with a value
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 84, in <module>
+    detection_result, filepath = detection_orchestrator.detection_pipeline(pos_value)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 37, in detection_pipeline
+    # self.logger.log_detection(alarm=False, position=in_cam_preset_no)
+           ^^^^^^^^
+UnboundLocalError: cannot access local variable 'filepath' where it is not associated with a value
+2026-05-27 18:21:16,589 | INFO | detection_app | Retrying in 10s...
+2026-05-27 18:21:30,169 | ERROR | detection_app | Detection failed (attempt 3/3): cannot access local variable 'filepath' where it is not associated with a value
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 84, in <module>
+    detection_result, filepath = detection_orchestrator.detection_pipeline(pos_value)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 37, in detection_pipeline
+    # self.logger.log_detection(alarm=False, position=in_cam_preset_no)
+           ^^^^^^^^
+UnboundLocalError: cannot access local variable 'filepath' where it is not associated with a value
+2026-05-27 18:21:30,180 | WARNING | detection_app | Frame failed (2/5 consecutive)
+2026-05-27 18:22:41,552 | INFO | detection_app | Starting detection loop.
+2026-05-27 18:54:09,897 | INFO | telegram.ext.Application | Application started
+2026-05-27 18:54:43,381 | INFO | detection_app | Starting detection loop.
+2026-05-27 19:08:27,637 | ERROR | detection_app | Detection failed (attempt 1/3): 'ContextualLogger' object is not subscriptable
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 90, in <module>
+    detection_result, filepath = detection_orchestrator.detection_pipeline(pos_value)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 32, in detection_pipeline
+    filepath = self.cam.save_image_with_metadata(self.image_paths['nonfire'], image, timestamp, pos, detection=False)
+                                                 ~~~~~~~~~~~~~~~~^^^^^^^^^^^
+TypeError: 'ContextualLogger' object is not subscriptable
+2026-05-27 19:08:27,656 | INFO | detection_app | Retrying in 5s...
+2026-05-27 21:08:34,247 | INFO | detection_app | Currently nighttime. Detection loop paused.
+2026-05-28 00:00:18,982 | INFO | detection_app | Currently nighttime. Detection loop paused.
+2026-05-28 05:17:44,520 | INFO | detection_app | Starting detection loop.
+2026-05-28 05:29:10,177 | ERROR | detection_app | Detection failed (attempt 1/3): 'ContextualLogger' object is not subscriptable
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 90, in <module>
+    detection_result, filepath = detection_orchestrator.detection_pipeline(pos_value)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 32, in detection_pipeline
+    filepath = self.cam.save_image_with_metadata(self.image_paths['nonfire'], image, timestamp, pos, detection=False)
+                                                 ~~~~~~~~~~~~~~~~^^^^^^^^^^^
+TypeError: 'ContextualLogger' object is not subscriptable
+2026-05-28 05:29:10,200 | INFO | detection_app | Retrying in 5s...
+2026-05-28 05:38:24,405 | ERROR | detection_app | Detection failed (attempt 2/3): 'ContextualLogger' object is not subscriptable
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 90, in <module>
+    detection_result, filepath = detection_orchestrator.detection_pipeline(pos_value)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 32, in detection_pipeline
+    filepath = self.cam.save_image_with_metadata(self.image_paths['nonfire'], image, timestamp, pos, detection=False)
+                                                 ~~~~~~~~~~~~~~~~^^^^^^^^^^^
+TypeError: 'ContextualLogger' object is not subscriptable
+2026-05-28 05:38:24,425 | INFO | detection_app | Retrying in 10s...
+2026-05-28 05:40:58,045 | ERROR | detection_app | Detection failed (attempt 3/3): 'ContextualLogger' object is not subscriptable
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 90, in <module>
+    detection_result, filepath = detection_orchestrator.detection_pipeline(pos_value)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 32, in detection_pipeline
+    filepath = self.cam.save_image_with_metadata(self.image_paths['nonfire'], image, timestamp, pos, detection=False)
+                                                 ~~~~~~~~~~~~~~~~^^^^^^^^^^^
+TypeError: 'ContextualLogger' object is not subscriptable
+2026-05-28 05:40:58,067 | WARNING | detection_app | Frame failed (1/5 consecutive)
+2026-05-28 05:47:51,718 | ERROR | detection_app | Detection failed (attempt 1/3): 'ContextualLogger' object is not subscriptable
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 90, in <module>
+    detection_result, filepath = detection_orchestrator.detection_pipeline(pos_value)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 32, in detection_pipeline
+    filepath = self.cam.save_image_with_metadata(self.image_paths['nonfire'], image, timestamp, pos, detection=False)
+                                                 ~~~~~~~~~~~~~~~~^^^^^^^^^^^
+TypeError: 'ContextualLogger' object is not subscriptable
+2026-05-28 05:47:51,740 | INFO | detection_app | Retrying in 5s...
+2026-05-28 05:49:36,607 | ERROR | detection_app | Detection failed (attempt 2/3): 'ContextualLogger' object is not subscriptable
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 90, in <module>
+    detection_result, filepath = detection_orchestrator.detection_pipeline(pos_value)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 32, in detection_pipeline
+    filepath = self.cam.save_image_with_metadata(self.image_paths['nonfire'], image, timestamp, pos, detection=False)
+                                                 ~~~~~~~~~~~~~~~~^^^^^^^^^^^
+TypeError: 'ContextualLogger' object is not subscriptable
+2026-05-28 05:49:36,624 | INFO | detection_app | Retrying in 10s...
+2026-05-28 05:50:17,327 | ERROR | detection_app | Detection failed (attempt 3/3): 'ContextualLogger' object is not subscriptable
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 90, in <module>
+    detection_result, filepath = detection_orchestrator.detection_pipeline(pos_value)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 32, in detection_pipeline
+    filepath = self.cam.save_image_with_metadata(self.image_paths['nonfire'], image, timestamp, pos, detection=False)
+                                                 ~~~~~~~~~~~~~~~~^^^^^^^^^^^
+TypeError: 'ContextualLogger' object is not subscriptable
+2026-05-28 05:50:17,345 | WARNING | detection_app | Frame failed (2/5 consecutive)
+2026-05-28 06:02:03,774 | ERROR | detection_app | Detection failed (attempt 1/3): 'ContextualLogger' object is not subscriptable
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 90, in <module>
+    detection_result, filepath = detection_orchestrator.detection_pipeline(pos_value)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 32, in detection_pipeline
+    filepath = self.cam.save_image_with_metadata(self.image_paths['nonfire'], image, timestamp, pos, detection=False)
+                                                 ~~~~~~~~~~~~~~~~^^^^^^^^^^^
+TypeError: 'ContextualLogger' object is not subscriptable
+2026-05-28 06:02:03,791 | INFO | detection_app | Retrying in 5s...
+2026-05-28 06:03:45,899 | ERROR | detection_app | Detection failed (attempt 2/3): 'ContextualLogger' object is not subscriptable
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 90, in <module>
+    detection_result, filepath = detection_orchestrator.detection_pipeline(pos_value)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 32, in detection_pipeline
+    filepath = self.cam.save_image_with_metadata(self.image_paths['nonfire'], image, timestamp, pos, detection=False)
+                                                 ~~~~~~~~~~~~~~~~^^^^^^^^^^^
+TypeError: 'ContextualLogger' object is not subscriptable
+2026-05-28 06:03:45,920 | INFO | detection_app | Retrying in 10s...
+2026-05-28 06:09:40,771 | ERROR | detection_app | Detection failed (attempt 3/3): 'ContextualLogger' object is not subscriptable
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 90, in <module>
+    detection_result, filepath = detection_orchestrator.detection_pipeline(pos_value)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 32, in detection_pipeline
+    filepath = self.cam.save_image_with_metadata(self.image_paths['nonfire'], image, timestamp, pos, detection=False)
+                                                 ~~~~~~~~~~~~~~~~^^^^^^^^^^^
+TypeError: 'ContextualLogger' object is not subscriptable
+2026-05-28 06:09:40,789 | WARNING | detection_app | Frame failed (3/5 consecutive)
+2026-05-28 06:11:16,051 | ERROR | detection_app | Detection failed (attempt 1/3): 'ContextualLogger' object is not subscriptable
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 90, in <module>
+    detection_result, filepath = detection_orchestrator.detection_pipeline(pos_value)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 32, in detection_pipeline
+    filepath = self.cam.save_image_with_metadata(self.image_paths['nonfire'], image, timestamp, pos, detection=False)
+                                                 ~~~~~~~~~~~~~~~~^^^^^^^^^^^
+TypeError: 'ContextualLogger' object is not subscriptable
+2026-05-28 06:11:16,065 | INFO | detection_app | Retrying in 5s...
+2026-05-28 06:12:58,185 | ERROR | detection_app | Detection failed (attempt 2/3): 'ContextualLogger' object is not subscriptable
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 90, in <module>
+    detection_result, filepath = detection_orchestrator.detection_pipeline(pos_value)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 27, in detection_pipeline
+    filepath = self.cam.save_image_with_metadata(self.image_paths['forestfire'], crop_image, timestamp, pos, detection=True, mask=mask_no)
+                                                 ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+TypeError: 'ContextualLogger' object is not subscriptable
+2026-05-28 06:12:58,205 | INFO | detection_app | Retrying in 10s...
+2026-05-28 06:14:22,574 | ERROR | detection_app | Detection failed (attempt 3/3): 'ContextualLogger' object is not subscriptable
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 90, in <module>
+    detection_result, filepath = detection_orchestrator.detection_pipeline(pos_value)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 32, in detection_pipeline
+    filepath = self.cam.save_image_with_metadata(self.image_paths['nonfire'], image, timestamp, pos, detection=False)
+                                                 ~~~~~~~~~~~~~~~~^^^^^^^^^^^
+TypeError: 'ContextualLogger' object is not subscriptable
+2026-05-28 06:14:22,591 | WARNING | detection_app | Frame failed (4/5 consecutive)
+2026-05-28 06:15:56,632 | ERROR | detection_app | Detection failed (attempt 1/3): 'ContextualLogger' object is not subscriptable
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 90, in <module>
+    detection_result, filepath = detection_orchestrator.detection_pipeline(pos_value)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 32, in detection_pipeline
+    filepath = self.cam.save_image_with_metadata(self.image_paths['nonfire'], image, timestamp, pos, detection=False)
+                                                 ~~~~~~~~~~~~~~~~^^^^^^^^^^^
+TypeError: 'ContextualLogger' object is not subscriptable
+2026-05-28 06:15:56,653 | INFO | detection_app | Retrying in 5s...
+2026-05-28 06:18:46,571 | ERROR | detection_app | Detection failed (attempt 2/3): 'ContextualLogger' object is not subscriptable
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 90, in <module>
+    detection_result, filepath = detection_orchestrator.detection_pipeline(pos_value)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 32, in detection_pipeline
+    filepath = self.cam.save_image_with_metadata(self.image_paths['nonfire'], image, timestamp, pos, detection=False)
+                                                 ~~~~~~~~~~~~~~~~^^^^^^^^^^^
+TypeError: 'ContextualLogger' object is not subscriptable
+2026-05-28 06:18:46,590 | INFO | detection_app | Retrying in 10s...
+2026-05-28 06:19:04,782 | ERROR | detection_app | Detection failed (attempt 3/3): 'ContextualLogger' object is not subscriptable
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 90, in <module>
+    detection_result, filepath = detection_orchestrator.detection_pipeline(pos_value)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 32, in detection_pipeline
+    filepath = self.cam.save_image_with_metadata(self.image_paths['nonfire'], image, timestamp, pos, detection=False)
+                                                 ~~~~~~~~~~~~~~~~^^^^^^^^^^^
+TypeError: 'ContextualLogger' object is not subscriptable
+2026-05-28 06:19:04,800 | WARNING | detection_app | Frame failed (5/5 consecutive)
+2026-05-28 06:19:04,803 | CRITICAL | detection_app | Shutting down due to too many consecutive failures: 'ContextualLogger' object is not subscriptable
+2026-05-28 06:19:04,981 | INFO | root | Successfully sent message to 5894386665
+2026-05-28 08:27:21,980 | INFO | telegram.ext.Application | Application started
+2026-05-28 08:27:55,091 | INFO | detection_app | Starting detection loop.
+2026-05-28 08:41:59,523 | ERROR | detection_app | Detection failed (attempt 1/3): VAPIXCamera.save_image_with_metadata() got an unexpected keyword argument 'detection'
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 102, in <module>
+    detection_result, filepath = detection_orchestrator.detection_pipeline(pos_value)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 32, in detection_pipeline
+    filepath = self.cam.save_image_with_metadata(self.image_paths['nonfire'], image, timestamp, pos, detection=False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: VAPIXCamera.save_image_with_metadata() got an unexpected keyword argument 'detection'
+2026-05-28 08:41:59,549 | INFO | detection_app | Retrying in 5s...
+2026-05-28 08:42:11,930 | INFO | detection_app | Shutdown requested with Ctrl-C.
+2026-05-28 08:46:18,788 | INFO | telegram.ext.Application | Application started
+2026-05-28 08:46:51,868 | INFO | detection_app | Starting detection loop.
+2026-05-28 09:20:30,642 | INFO | detection_app | Shutdown requested with Ctrl-C.
+2026-05-28 09:20:58,764 | INFO | telegram.ext.Application | Application started
+2026-05-28 09:21:31,647 | INFO | detection_app | Starting detection loop.
+2026-05-28 09:21:31,817 | ERROR | detection_app | Detection failed (attempt 1/3): cannot unpack non-iterable int object
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 102, in <module>
+    filepath = cam.save_image_with_metadata(path_no_smoke, cam.get_current_image(), start_time, pos_value, detected=False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\VAPIXcamera.py", line 345, in save_image_with_metadata
+    pan, tilt, zoom, focus = position
+    ^^^^^^^^^^^^^^^^^^^^^^
+TypeError: cannot unpack non-iterable int object
+2026-05-28 09:21:31,834 | INFO | detection_app | Retrying in 5s...
+2026-05-28 09:21:36,957 | ERROR | detection_app | Detection failed (attempt 2/3): cannot unpack non-iterable int object
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 102, in <module>
+    filepath = cam.save_image_with_metadata(path_no_smoke, cam.get_current_image(), start_time, pos_value, detected=False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\VAPIXcamera.py", line 345, in save_image_with_metadata
+    pan, tilt, zoom, focus = position
+    ^^^^^^^^^^^^^^^^^^^^^^
+TypeError: cannot unpack non-iterable int object
+2026-05-28 09:21:36,970 | INFO | detection_app | Retrying in 10s...
+2026-05-28 09:21:45,841 | INFO | detection_app | Shutdown requested with Ctrl-C.
+2026-05-28 09:24:09,595 | INFO | telegram.ext.Application | Application started
+2026-05-28 09:24:42,973 | INFO | detection_app | Starting detection loop.
+2026-05-28 09:24:42,979 | ERROR | detection_app | Detection failed (attempt 1/3): '<=' not supported between instances of 'int' and 'str'
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 103, in <module>
+    telegram_bot.send_review_sync(
+  File "u:\Fraunhofer Waldbrand\Camera_test\telegram_bot.py", line 269, in send_review_sync
+    return asyncio.run(
+           ^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\telegram_bot.py", line 198, in send_review
+    position = cam.translate_in_cam_preset(position)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\VAPIXcamera.py", line 408, in translate_in_cam_preset
+    return self.in_cam_preset_no(preset_no)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\VAPIXcamera.py", line 374, in in_cam_preset_no
+    if 18 <= preset_no <= 31:
+       ^^^^^^^^^^^^^^^^^^^^^
+TypeError: '<=' not supported between instances of 'int' and 'str'
+2026-05-28 09:24:43,000 | INFO | detection_app | Retrying in 5s...
+2026-05-28 09:24:48,010 | ERROR | detection_app | Detection failed (attempt 2/3): '<=' not supported between instances of 'int' and 'str'
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 103, in <module>
+    telegram_bot.send_review_sync(
+  File "u:\Fraunhofer Waldbrand\Camera_test\telegram_bot.py", line 269, in send_review_sync
+    return asyncio.run(
+           ^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\telegram_bot.py", line 198, in send_review
+    position = cam.translate_in_cam_preset(position)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\VAPIXcamera.py", line 408, in translate_in_cam_preset
+    return self.in_cam_preset_no(preset_no)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\VAPIXcamera.py", line 374, in in_cam_preset_no
+    if 18 <= preset_no <= 31:
+       ^^^^^^^^^^^^^^^^^^^^^
+TypeError: '<=' not supported between instances of 'int' and 'str'
+2026-05-28 09:24:48,028 | INFO | detection_app | Retrying in 10s...
+2026-05-28 09:24:58,038 | ERROR | detection_app | Detection failed (attempt 3/3): '<=' not supported between instances of 'int' and 'str'
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 103, in <module>
+    telegram_bot.send_review_sync(
+  File "u:\Fraunhofer Waldbrand\Camera_test\telegram_bot.py", line 269, in send_review_sync
+    return asyncio.run(
+           ^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\telegram_bot.py", line 198, in send_review
+    position = cam.translate_in_cam_preset(position)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\VAPIXcamera.py", line 408, in translate_in_cam_preset
+    return self.in_cam_preset_no(preset_no)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\VAPIXcamera.py", line 374, in in_cam_preset_no
+    if 18 <= preset_no <= 31:
+       ^^^^^^^^^^^^^^^^^^^^^
+TypeError: '<=' not supported between instances of 'int' and 'str'
+2026-05-28 09:24:58,056 | WARNING | detection_app | Frame failed (1/5 consecutive)
+2026-05-28 09:25:15,288 | INFO | detection_app | Shutdown requested with Ctrl-C.
+2026-05-28 09:28:52,678 | INFO | telegram.ext.Application | Application started
+2026-05-28 09:29:26,972 | INFO | detection_app | Starting detection loop.
+2026-05-28 09:29:26,977 | INFO | root | Starting broadcast to 1 subscribers.
+2026-05-28 09:29:48,232 | INFO | root | Alert 1779953366977576 vote by 5894386665: fire; counts fire=1, nofire=0, unclear=0
+2026-05-28 09:29:48,286 | INFO | root | Starting broadcast to 1 subscribers.
+2026-05-28 09:29:48,368 | INFO | root | Successfully sent message to 5894386665
+2026-05-28 09:29:50,343 | INFO | root | Starting broadcast to 1 subscribers.
+2026-05-28 09:30:00,840 | INFO | root | Alert 1779953390343599 vote by 5894386665: nofire; counts fire=0, nofire=1, unclear=0
+2026-05-28 09:30:00,893 | INFO | root | Starting broadcast to 1 subscribers.
+2026-05-28 09:30:00,974 | INFO | root | Successfully sent message to 5894386665
+2026-05-28 09:30:13,080 | INFO | root | Starting broadcast to 1 subscribers.
+2026-05-28 09:30:40,238 | INFO | root | Starting broadcast to 1 subscribers.
+2026-05-28 09:30:43,378 | INFO | root | Alert 1779953413080738 vote by 5894386665: nofire; counts fire=0, nofire=1, unclear=0
+2026-05-28 09:30:43,429 | INFO | root | Starting broadcast to 1 subscribers.
+2026-05-28 09:30:43,509 | INFO | root | Successfully sent message to 5894386665
+2026-05-28 09:30:58,172 | INFO | root | Successfully sent message to 5894386665
+2026-05-28 09:31:02,725 | INFO | root | Successfully sent message to 5894386665
+2026-05-28 09:31:02,878 | INFO | root | Starting broadcast to 1 subscribers.
+2026-05-28 09:31:05,498 | INFO | root | Alert 1779953440238336 vote by 5894386665: nofire; counts fire=0, nofire=1, unclear=0
+2026-05-28 09:31:05,525 | INFO | root | Starting broadcast to 1 subscribers.
+2026-05-28 09:31:05,606 | INFO | root | Successfully sent message to 5894386665
+2026-05-28 09:31:09,569 | INFO | root | Alert 1779953462878570 vote by 5894386665: fire; counts fire=1, nofire=0, unclear=0
+2026-05-28 09:31:09,612 | INFO | root | Starting broadcast to 1 subscribers.
+2026-05-28 09:31:09,691 | INFO | root | Successfully sent message to 5894386665
+2026-05-28 09:31:17,621 | INFO | detection_app | Shutdown requested with Ctrl-C.
+2026-05-28 09:34:17,428 | INFO | telegram.ext.Application | Application started
+2026-05-28 09:34:49,478 | INFO | detection_app | Starting detection loop.
+2026-05-28 09:46:30,532 | INFO | detection_app | Shutdown requested with Ctrl-C.
+2026-05-28 09:46:48,734 | INFO | telegram.ext.Application | Application started
+2026-05-28 09:47:21,399 | INFO | detection_app | Starting detection loop.
+2026-05-28 10:46:43,188 | INFO | detection_app | Shutdown requested with Ctrl-C.
+2026-05-28 10:47:01,368 | INFO | telegram.ext.Application | Application started
+2026-05-28 10:47:35,186 | INFO | detection_app | Starting detection loop.
+2026-05-28 12:04:10,927 | INFO | root | Starting broadcast to 3 subscribers.
+2026-05-28 12:04:11,638 | INFO | detection_app | Detection at Pos. 2.12!  (Temp: 20.4°C, RH: 34.0%, Precip: 0.0mm) - Alarm triggered.
+2026-05-28 12:05:34,790 | INFO | root | Alert 1779962650927905 vote by 5894386665: nofire; counts fire=0, nofire=1, unclear=0
+2026-05-28 12:05:34,855 | INFO | root | Starting broadcast to 3 subscribers.
+2026-05-28 12:05:34,935 | INFO | root | Successfully sent message to 5894386665
+2026-05-28 12:05:35,000 | INFO | root | Successfully sent message to 1361078892
+2026-05-28 12:05:35,048 | INFO | root | Successfully sent message to 8655257428
+2026-05-28 12:13:23,543 | INFO | detection_app | Shutdown requested with Ctrl-C.
+2026-05-28 12:13:42,928 | INFO | telegram.ext.Application | Application started
+2026-05-28 12:14:17,401 | INFO | detection_app | Starting detection loop.
+2026-05-28 16:25:26,284 | INFO | detection_app | Shutdown requested with Ctrl-C.
+2026-05-28 16:28:19,610 | INFO | telegram.ext.Application | Application started
+2026-05-28 16:28:54,327 | INFO | detection_app | Starting detection loop.
+2026-05-28 21:43:57,298 | INFO | detection_app | Currently nighttime. Detection loop paused.
+2026-05-29 00:00:15,671 | INFO | detection_app | Currently nighttime. Detection loop paused.
+2026-05-29 05:16:42,180 | INFO | detection_app | Starting detection loop.
+2026-05-29 05:47:20,398 | ERROR | detection_app | Detection failed (attempt 1/3): index 1 is out of bounds for dimension 0 with size 1
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 102, in <module>
+    detection_result, images = detection_orchestrator.detection_pipeline(pos_value)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 29, in detection_pipeline
+    self.cam.area_zoom(lowest_point[0], lowest_point[1])
+                                        ~~~~~~~~~~~~^^^
+IndexError: index 1 is out of bounds for dimension 0 with size 1
+2026-05-29 05:47:20,421 | INFO | detection_app | Retrying in 5s...
+2026-05-29 06:49:48,277 | ERROR | detection_app | Detection failed (attempt 2/3): index 1 is out of bounds for dimension 0 with size 1
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 102, in <module>
+    detection_result, images = detection_orchestrator.detection_pipeline(pos_value)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 29, in detection_pipeline
+    self.cam.area_zoom(lowest_point[0], lowest_point[1])
+                                        ~~~~~~~~~~~~^^^
+IndexError: index 1 is out of bounds for dimension 0 with size 1
+2026-05-29 06:49:48,302 | INFO | detection_app | Retrying in 10s...
+2026-05-29 06:50:06,312 | ERROR | detection_app | Detection failed (attempt 3/3): index 1 is out of bounds for dimension 0 with size 1
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 102, in <module>
+    detection_result, images = detection_orchestrator.detection_pipeline(pos_value)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 29, in detection_pipeline
+    self.cam.area_zoom(lowest_point[0], lowest_point[1])
+                                        ~~~~~~~~~~~~^^^
+IndexError: index 1 is out of bounds for dimension 0 with size 1
+2026-05-29 06:50:06,330 | WARNING | detection_app | Frame failed (1/5 consecutive)
+2026-05-29 06:54:55,103 | ERROR | detection_app | Detection failed (attempt 1/3): index 1 is out of bounds for dimension 0 with size 1
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 102, in <module>
+    detection_result, images = detection_orchestrator.detection_pipeline(pos_value)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 29, in detection_pipeline
+    self.cam.area_zoom(lowest_point[0], lowest_point[1])
+                                        ~~~~~~~~~~~~^^^
+IndexError: index 1 is out of bounds for dimension 0 with size 1
+2026-05-29 06:54:55,117 | INFO | detection_app | Retrying in 5s...
+2026-05-29 06:59:47,233 | ERROR | detection_app | Detection failed (attempt 2/3): index 1 is out of bounds for dimension 0 with size 1
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 102, in <module>
+    detection_result, images = detection_orchestrator.detection_pipeline(pos_value)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 29, in detection_pipeline
+    self.cam.area_zoom(lowest_point[0], lowest_point[1])
+                                        ~~~~~~~~~~~~^^^
+IndexError: index 1 is out of bounds for dimension 0 with size 1
+2026-05-29 06:59:47,252 | INFO | detection_app | Retrying in 10s...
+2026-05-29 07:28:02,256 | ERROR | detection_app | Detection failed (attempt 3/3): index 1 is out of bounds for dimension 0 with size 1
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 102, in <module>
+    detection_result, images = detection_orchestrator.detection_pipeline(pos_value)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 29, in detection_pipeline
+    self.cam.area_zoom(lowest_point[0], lowest_point[1])
+                                        ~~~~~~~~~~~~^^^
+IndexError: index 1 is out of bounds for dimension 0 with size 1
+2026-05-29 07:28:02,291 | WARNING | detection_app | Frame failed (2/5 consecutive)
+2026-05-29 17:57:30,925 | ERROR | detection_app | Detection failed (attempt 1/3): index 1 is out of bounds for dimension 0 with size 1
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 102, in <module>
+    detection_result, images = detection_orchestrator.detection_pipeline(pos_value)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 29, in detection_pipeline
+    self.cam.area_zoom(lowest_point[0], lowest_point[1])
+                                        ~~~~~~~~~~~~^^^
+IndexError: index 1 is out of bounds for dimension 0 with size 1
+2026-05-29 17:57:30,941 | INFO | detection_app | Retrying in 5s...
+2026-05-29 18:07:54,585 | ERROR | detection_app | Detection failed (attempt 2/3): index 1 is out of bounds for dimension 0 with size 1
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 102, in <module>
+    detection_result, images = detection_orchestrator.detection_pipeline(pos_value)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 29, in detection_pipeline
+    self.cam.area_zoom(lowest_point[0], lowest_point[1])
+                                        ~~~~~~~~~~~~^^^
+IndexError: index 1 is out of bounds for dimension 0 with size 1
+2026-05-29 18:07:54,599 | INFO | detection_app | Retrying in 10s...
+2026-05-29 19:22:11,780 | ERROR | detection_app | Detection failed (attempt 3/3): index 1 is out of bounds for dimension 0 with size 1
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 102, in <module>
+    detection_result, images = detection_orchestrator.detection_pipeline(pos_value)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 29, in detection_pipeline
+    self.cam.area_zoom(lowest_point[0], lowest_point[1])
+                                        ~~~~~~~~~~~~^^^
+IndexError: index 1 is out of bounds for dimension 0 with size 1
+2026-05-29 19:22:11,822 | WARNING | detection_app | Frame failed (3/5 consecutive)
+2026-05-30 00:00:17,137 | INFO | detection_app | Currently nighttime. Detection loop paused.
+2026-05-30 05:15:50,768 | INFO | detection_app | Starting detection loop.
+2026-05-30 08:53:27,464 | ERROR | detection_app | Detection failed (attempt 1/3): index 1 is out of bounds for dimension 0 with size 1
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 102, in <module>
+    detection_result, images = detection_orchestrator.detection_pipeline(pos_value)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 29, in detection_pipeline
+    self.cam.area_zoom(lowest_point[0], lowest_point[1])
+                                        ~~~~~~~~~~~~^^^
+IndexError: index 1 is out of bounds for dimension 0 with size 1
+2026-05-30 08:53:27,480 | INFO | detection_app | Retrying in 5s...
+2026-05-30 08:53:50,749 | ERROR | detection_app | Detection failed (attempt 2/3): index 1 is out of bounds for dimension 0 with size 1
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 102, in <module>
+    detection_result, images = detection_orchestrator.detection_pipeline(pos_value)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 29, in detection_pipeline
+    self.cam.area_zoom(lowest_point[0], lowest_point[1])
+                                        ~~~~~~~~~~~~^^^
+IndexError: index 1 is out of bounds for dimension 0 with size 1
+2026-05-30 08:53:50,974 | INFO | detection_app | Retrying in 10s...
+2026-05-30 08:56:44,545 | ERROR | detection_app | Detection failed (attempt 3/3): index 1 is out of bounds for dimension 0 with size 1
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 102, in <module>
+    detection_result, images = detection_orchestrator.detection_pipeline(pos_value)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 29, in detection_pipeline
+    self.cam.area_zoom(lowest_point[0], lowest_point[1])
+                                        ~~~~~~~~~~~~^^^
+IndexError: index 1 is out of bounds for dimension 0 with size 1
+2026-05-30 08:56:44,559 | WARNING | detection_app | Frame failed (1/5 consecutive)
+2026-05-30 15:46:26,037 | INFO | detection_app | Shutdown requested with Ctrl-C.
+2026-05-30 15:46:46,416 | INFO | telegram.ext.Application | Application started
+2026-05-30 15:47:20,298 | INFO | detection_app | Starting detection loop.
+2026-05-30 21:12:06,271 | INFO | detection_app | Currently nighttime. Detection loop paused.
+2026-05-31 00:00:04,850 | INFO | detection_app | Currently nighttime. Detection loop paused.
+2026-05-31 05:15:09,047 | INFO | detection_app | Starting detection loop.
+2026-05-31 12:14:33,461 | ERROR | detection_app | Detection failed (attempt 1/3): VAPIXCamera.save_image_with_metadata() got an unexpected keyword argument 'zoomed'
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 102, in <module>
+    detection_result, images = detection_orchestrator.detection_pipeline(pos_value)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 31, in detection_pipeline
+    filepath_zoomed = self.cam.save_image_with_metadata(self.image_paths['forestfire'], self.cam.get_current_image(), timestamp, pos, detected=True, zoomed=True)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: VAPIXCamera.save_image_with_metadata() got an unexpected keyword argument 'zoomed'
+2026-05-31 12:14:33,485 | INFO | detection_app | Retrying in 5s...
+2026-05-31 12:17:06,377 | ERROR | detection_app | Detection failed (attempt 2/3): VAPIXCamera.save_image_with_metadata() got an unexpected keyword argument 'zoomed'
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 102, in <module>
+    detection_result, images = detection_orchestrator.detection_pipeline(pos_value)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 31, in detection_pipeline
+    filepath_zoomed = self.cam.save_image_with_metadata(self.image_paths['forestfire'], self.cam.get_current_image(), timestamp, pos, detected=True, zoomed=True)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: VAPIXCamera.save_image_with_metadata() got an unexpected keyword argument 'zoomed'
+2026-05-31 12:17:06,401 | INFO | detection_app | Retrying in 10s...
+2026-05-31 12:17:36,894 | ERROR | detection_app | Detection failed (attempt 3/3): VAPIXCamera.save_image_with_metadata() got an unexpected keyword argument 'zoomed'
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 102, in <module>
+    detection_result, images = detection_orchestrator.detection_pipeline(pos_value)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 31, in detection_pipeline
+    filepath_zoomed = self.cam.save_image_with_metadata(self.image_paths['forestfire'], self.cam.get_current_image(), timestamp, pos, detected=True, zoomed=True)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: VAPIXCamera.save_image_with_metadata() got an unexpected keyword argument 'zoomed'
+2026-05-31 12:17:36,920 | WARNING | detection_app | Frame failed (1/5 consecutive)
+2026-05-31 12:19:16,691 | ERROR | detection_app | Detection failed (attempt 1/3): VAPIXCamera.save_image_with_metadata() got an unexpected keyword argument 'zoomed'
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 102, in <module>
+    detection_result, images = detection_orchestrator.detection_pipeline(pos_value)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 31, in detection_pipeline
+    filepath_zoomed = self.cam.save_image_with_metadata(self.image_paths['forestfire'], self.cam.get_current_image(), timestamp, pos, detected=True, zoomed=True)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: VAPIXCamera.save_image_with_metadata() got an unexpected keyword argument 'zoomed'
+2026-05-31 12:19:16,722 | INFO | detection_app | Retrying in 5s...
+2026-05-31 12:20:23,053 | ERROR | detection_app | Detection failed (attempt 2/3): VAPIXCamera.save_image_with_metadata() got an unexpected keyword argument 'zoomed'
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 102, in <module>
+    detection_result, images = detection_orchestrator.detection_pipeline(pos_value)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 31, in detection_pipeline
+    filepath_zoomed = self.cam.save_image_with_metadata(self.image_paths['forestfire'], self.cam.get_current_image(), timestamp, pos, detected=True, zoomed=True)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: VAPIXCamera.save_image_with_metadata() got an unexpected keyword argument 'zoomed'
+2026-05-31 12:20:23,076 | INFO | detection_app | Retrying in 10s...
+2026-05-31 12:21:43,466 | ERROR | detection_app | Detection failed (attempt 3/3): VAPIXCamera.save_image_with_metadata() got an unexpected keyword argument 'zoomed'
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 102, in <module>
+    detection_result, images = detection_orchestrator.detection_pipeline(pos_value)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 31, in detection_pipeline
+    filepath_zoomed = self.cam.save_image_with_metadata(self.image_paths['forestfire'], self.cam.get_current_image(), timestamp, pos, detected=True, zoomed=True)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: VAPIXCamera.save_image_with_metadata() got an unexpected keyword argument 'zoomed'
+2026-05-31 12:21:43,485 | WARNING | detection_app | Frame failed (2/5 consecutive)
+2026-05-31 12:25:48,406 | ERROR | detection_app | Detection failed (attempt 1/3): VAPIXCamera.save_image_with_metadata() got an unexpected keyword argument 'zoomed'
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 102, in <module>
+    detection_result, images = detection_orchestrator.detection_pipeline(pos_value)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 31, in detection_pipeline
+    filepath_zoomed = self.cam.save_image_with_metadata(self.image_paths['forestfire'], self.cam.get_current_image(), timestamp, pos, detected=True, zoomed=True)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: VAPIXCamera.save_image_with_metadata() got an unexpected keyword argument 'zoomed'
+2026-05-31 12:25:48,429 | INFO | detection_app | Retrying in 5s...
+2026-05-31 12:26:13,888 | ERROR | detection_app | Detection failed (attempt 2/3): VAPIXCamera.save_image_with_metadata() got an unexpected keyword argument 'zoomed'
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 102, in <module>
+    detection_result, images = detection_orchestrator.detection_pipeline(pos_value)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 31, in detection_pipeline
+    filepath_zoomed = self.cam.save_image_with_metadata(self.image_paths['forestfire'], self.cam.get_current_image(), timestamp, pos, detected=True, zoomed=True)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: VAPIXCamera.save_image_with_metadata() got an unexpected keyword argument 'zoomed'
+2026-05-31 12:26:13,913 | INFO | detection_app | Retrying in 10s...
+2026-05-31 12:29:12,938 | ERROR | detection_app | Detection failed (attempt 3/3): VAPIXCamera.save_image_with_metadata() got an unexpected keyword argument 'zoomed'
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 102, in <module>
+    detection_result, images = detection_orchestrator.detection_pipeline(pos_value)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 31, in detection_pipeline
+    filepath_zoomed = self.cam.save_image_with_metadata(self.image_paths['forestfire'], self.cam.get_current_image(), timestamp, pos, detected=True, zoomed=True)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: VAPIXCamera.save_image_with_metadata() got an unexpected keyword argument 'zoomed'
+2026-05-31 12:29:12,966 | WARNING | detection_app | Frame failed (3/5 consecutive)
+2026-05-31 12:32:02,216 | ERROR | detection_app | Detection failed (attempt 1/3): VAPIXCamera.save_image_with_metadata() got an unexpected keyword argument 'zoomed'
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 102, in <module>
+    detection_result, images = detection_orchestrator.detection_pipeline(pos_value)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 31, in detection_pipeline
+    filepath_zoomed = self.cam.save_image_with_metadata(self.image_paths['forestfire'], self.cam.get_current_image(), timestamp, pos, detected=True, zoomed=True)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: VAPIXCamera.save_image_with_metadata() got an unexpected keyword argument 'zoomed'
+2026-05-31 12:32:02,235 | INFO | detection_app | Retrying in 5s...
+2026-05-31 12:32:32,449 | ERROR | detection_app | Detection failed (attempt 2/3): VAPIXCamera.save_image_with_metadata() got an unexpected keyword argument 'zoomed'
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 102, in <module>
+    detection_result, images = detection_orchestrator.detection_pipeline(pos_value)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 31, in detection_pipeline
+    filepath_zoomed = self.cam.save_image_with_metadata(self.image_paths['forestfire'], self.cam.get_current_image(), timestamp, pos, detected=True, zoomed=True)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: VAPIXCamera.save_image_with_metadata() got an unexpected keyword argument 'zoomed'
+2026-05-31 12:32:32,476 | INFO | detection_app | Retrying in 10s...
+2026-05-31 12:33:06,491 | ERROR | detection_app | Detection failed (attempt 3/3): VAPIXCamera.save_image_with_metadata() got an unexpected keyword argument 'zoomed'
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 102, in <module>
+    detection_result, images = detection_orchestrator.detection_pipeline(pos_value)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 31, in detection_pipeline
+    filepath_zoomed = self.cam.save_image_with_metadata(self.image_paths['forestfire'], self.cam.get_current_image(), timestamp, pos, detected=True, zoomed=True)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: VAPIXCamera.save_image_with_metadata() got an unexpected keyword argument 'zoomed'
+2026-05-31 12:33:06,514 | WARNING | detection_app | Frame failed (4/5 consecutive)
+2026-05-31 12:34:20,893 | ERROR | detection_app | Detection failed (attempt 1/3): VAPIXCamera.save_image_with_metadata() got an unexpected keyword argument 'zoomed'
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 102, in <module>
+    detection_result, images = detection_orchestrator.detection_pipeline(pos_value)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 31, in detection_pipeline
+    filepath_zoomed = self.cam.save_image_with_metadata(self.image_paths['forestfire'], self.cam.get_current_image(), timestamp, pos, detected=True, zoomed=True)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: VAPIXCamera.save_image_with_metadata() got an unexpected keyword argument 'zoomed'
+2026-05-31 12:34:20,918 | INFO | detection_app | Retrying in 5s...
+2026-05-31 14:11:41,260 | ERROR | detection_app | Detection failed (attempt 2/3): VAPIXCamera.save_image_with_metadata() got an unexpected keyword argument 'zoomed'
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 102, in <module>
+    detection_result, images = detection_orchestrator.detection_pipeline(pos_value)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 31, in detection_pipeline
+    filepath_zoomed = self.cam.save_image_with_metadata(self.image_paths['forestfire'], self.cam.get_current_image(), timestamp, pos, detected=True, zoomed=True)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: VAPIXCamera.save_image_with_metadata() got an unexpected keyword argument 'zoomed'
+2026-05-31 14:11:41,279 | INFO | detection_app | Retrying in 10s...
+2026-05-31 14:18:52,095 | ERROR | detection_app | Detection failed (attempt 3/3): VAPIXCamera.save_image_with_metadata() got an unexpected keyword argument 'zoomed'
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 102, in <module>
+    detection_result, images = detection_orchestrator.detection_pipeline(pos_value)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 31, in detection_pipeline
+    filepath_zoomed = self.cam.save_image_with_metadata(self.image_paths['forestfire'], self.cam.get_current_image(), timestamp, pos, detected=True, zoomed=True)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: VAPIXCamera.save_image_with_metadata() got an unexpected keyword argument 'zoomed'
+2026-05-31 14:18:52,115 | WARNING | detection_app | Frame failed (5/5 consecutive)
+2026-05-31 14:18:52,117 | CRITICAL | detection_app | Shutting down due to too many consecutive failures: VAPIXCamera.save_image_with_metadata() got an unexpected keyword argument 'zoomed'
+2026-05-31 14:18:52,348 | INFO | root | Successfully sent message to 5894386665
+2026-05-31 15:12:12,251 | INFO | telegram.ext.Application | Application started
+2026-05-31 15:12:45,388 | INFO | detection_app | Starting detection loop.
+2026-05-31 17:19:14,621 | INFO | root | Starting broadcast to 3 subscribers.
+2026-05-31 17:19:15,663 | INFO | detection_app | Detection at Pos. 1.10!  (Temp: 25.2°C, RH: 43.0%, Precip: 0.0mm) - Alarm triggered.
+2026-05-31 17:20:18,993 | INFO | root | Alert 1780240754621787 vote by 5894386665: nofire; counts fire=0, nofire=1, unclear=0
+2026-05-31 19:04:40,260 | INFO | root | Alert 1780240754621787 vote by 8655257428: nofire; counts fire=0, nofire=2, unclear=0
+2026-05-31 19:04:40,339 | INFO | root | Starting broadcast to 3 subscribers.
+2026-05-31 19:04:40,419 | INFO | root | Successfully sent message to 5894386665
+2026-05-31 19:04:40,480 | INFO | root | Successfully sent message to 1361078892
+2026-05-31 19:04:40,531 | INFO | root | Successfully sent message to 8655257428
+2026-05-31 20:29:50,997 | INFO | detection_app | Detection at Pos. 1.10 but no alarm triggered  (Temp: 19.6°C, RH: 82.0%, Precip: 1.2mm)
+2026-05-31 20:53:14,540 | INFO | detection_app | Detection at Pos. 2.8 but no alarm triggered  (Temp: 19.6°C, RH: 82.0%, Precip: 1.2mm)
+2026-05-31 20:58:34,336 | INFO | detection_app | Detection at Pos. 1.9 but no alarm triggered  (Temp: 19.6°C, RH: 82.0%, Precip: 1.2mm)
+2026-05-31 21:03:39,214 | INFO | detection_app | Detection at Pos. 2.9 but no alarm triggered  (Temp: 19.6°C, RH: 82.0%, Precip: 1.2mm)
+2026-05-31 21:09:52,617 | INFO | detection_app | Detection at Pos. 1.13 but no alarm triggered  (Temp: 19.6°C, RH: 82.0%, Precip: 1.2mm)
+2026-05-31 21:12:51,815 | INFO | detection_app | Currently nighttime. Detection loop paused.
+2026-06-01 00:00:16,558 | INFO | detection_app | Currently nighttime. Detection loop paused.
+2026-06-01 05:14:21,039 | INFO | detection_app | Starting detection loop.
+2026-06-01 05:37:38,008 | INFO | detection_app | Detection at Pos. 2.5 but no alarm triggered  (Temp: 14.6°C, RH: 93.0%, Precip: 0.0mm)
+2026-06-01 07:09:31,485 | INFO | detection_app | Detection at Pos. 1.12 but no alarm triggered  (Temp: 14.5°C, RH: 94.0%, Precip: 0.0mm)
+2026-06-01 07:20:42,178 | INFO | detection_app | Detection at Pos. 1.8 but no alarm triggered  (Temp: 14.7°C, RH: 92.0%, Precip: 0.0mm)
+2026-06-01 07:21:53,692 | INFO | detection_app | Detection at Pos. 1.10 but no alarm triggered  (Temp: 14.7°C, RH: 92.0%, Precip: 0.0mm)
+2026-06-01 07:27:15,023 | INFO | detection_app | Detection at Pos. 2.7 but no alarm triggered  (Temp: 14.7°C, RH: 92.0%, Precip: 0.0mm)
+2026-06-01 07:30:15,176 | INFO | detection_app | Detection at Pos. 2.12 but no alarm triggered  (Temp: 14.7°C, RH: 92.0%, Precip: 0.0mm)
+2026-06-01 07:32:01,886 | INFO | detection_app | Detection at Pos. 1.3 but no alarm triggered  (Temp: 14.7°C, RH: 92.0%, Precip: 0.0mm)
+2026-06-01 07:32:42,596 | INFO | detection_app | Detection at Pos. 1.4 but no alarm triggered  (Temp: 14.7°C, RH: 92.0%, Precip: 0.0mm)
+2026-06-01 07:33:23,007 | INFO | detection_app | Detection at Pos. 1.5 but no alarm triggered  (Temp: 14.7°C, RH: 92.0%, Precip: 0.0mm)
+2026-06-01 07:34:34,353 | INFO | detection_app | Detection at Pos. 1.7 but no alarm triggered  (Temp: 14.7°C, RH: 92.0%, Precip: 0.0mm)
+2026-06-01 07:35:15,199 | INFO | detection_app | Detection at Pos. 1.8 but no alarm triggered  (Temp: 14.7°C, RH: 92.0%, Precip: 0.0mm)
+2026-06-01 07:40:10,904 | INFO | detection_app | Detection at Pos. 2.3 but no alarm triggered  (Temp: 14.7°C, RH: 92.0%, Precip: 0.0mm)
+2026-06-01 07:42:22,470 | INFO | detection_app | Detection at Pos. 2.7 but no alarm triggered  (Temp: 14.7°C, RH: 92.0%, Precip: 0.0mm)
+2026-06-01 07:44:53,230 | INFO | detection_app | Detection at Pos. 2.11 but no alarm triggered  (Temp: 14.7°C, RH: 92.0%, Precip: 0.0mm)
+2026-06-01 07:53:55,303 | INFO | detection_app | Detection at Pos. 2.3 but no alarm triggered  (Temp: 14.7°C, RH: 92.0%, Precip: 0.0mm)
+2026-06-01 08:04:40,152 | INFO | detection_app | Detection at Pos. 1.10 but no alarm triggered  (Temp: 14.7°C, RH: 92.0%, Precip: 0.0mm)
+2026-06-01 08:14:57,889 | INFO | detection_app | Detection at Pos. 1.3 but no alarm triggered  (Temp: 15.1°C, RH: 87.0%, Precip: 0.0mm)
+2026-06-01 08:18:16,942 | INFO | detection_app | Detection at Pos. 1.9 but no alarm triggered  (Temp: 15.1°C, RH: 87.0%, Precip: 0.0mm)
+2026-06-01 08:22:15,832 | INFO | detection_app | Detection at Pos. 2.3 but no alarm triggered  (Temp: 15.1°C, RH: 87.0%, Precip: 0.0mm)
+2026-06-01 08:25:12,013 | INFO | detection_app | Detection at Pos. 2.8 but no alarm triggered  (Temp: 15.1°C, RH: 87.0%, Precip: 0.0mm)
+2026-06-01 08:39:16,462 | INFO | detection_app | Detection at Pos. 2.10 but no alarm triggered  (Temp: 15.1°C, RH: 87.0%, Precip: 0.0mm)
+2026-06-01 14:21:31,617 | INFO | root | Starting broadcast to 3 subscribers.
+2026-06-01 14:21:32,573 | INFO | detection_app | Detection at Pos. 1.2!  (Temp: 21.4°C, RH: 52.0%, Precip: 0.0mm) - Alarm triggered.
+2026-06-01 14:22:53,637 | INFO | root | Alert 1780316491617684 vote by 5894386665: nofire; counts fire=0, nofire=1, unclear=0
+2026-06-01 16:24:17,228 | INFO | telegram.ext.Application | Application started
+2026-06-01 16:24:52,879 | INFO | detection_app | Starting detection loop.
+2026-06-01 21:14:12,145 | INFO | detection_app | Currently nighttime. Detection loop paused.
+2026-06-02 00:00:17,295 | INFO | detection_app | Currently nighttime. Detection loop paused.
+2026-06-02 05:13:42,973 | INFO | detection_app | Starting detection loop.
+2026-06-02 13:11:04,668 | ERROR | telegram.ext.Application | No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\ext\_utils\networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\ext\_utils\networkloop.py", line 154, in do_action
+    action_cb_task.result()
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\ext\_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\ext\_extbot.py", line 672, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\_bot.py", line 4865, in get_updates
+    await self._post(
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\_bot.py", line 704, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\ext\_extbot.py", line 370, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\_bot.py", line 733, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\request\_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\request\_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-06-02 13:11:09,736 | ERROR | telegram.ext.Application | No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\ext\_utils\networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\ext\_utils\networkloop.py", line 154, in do_action
+    action_cb_task.result()
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\ext\_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\ext\_extbot.py", line 672, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\_bot.py", line 4865, in get_updates
+    await self._post(
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\_bot.py", line 704, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\ext\_extbot.py", line 370, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\_bot.py", line 733, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\request\_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\request\_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-06-02 13:11:15,784 | ERROR | telegram.ext.Application | No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\ext\_utils\networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\ext\_utils\networkloop.py", line 154, in do_action
+    action_cb_task.result()
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\ext\_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\ext\_extbot.py", line 672, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\_bot.py", line 4865, in get_updates
+    await self._post(
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\_bot.py", line 704, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\ext\_extbot.py", line 370, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\_bot.py", line 733, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\request\_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\request\_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-06-02 13:12:05,227 | INFO | detection_app | Shutdown requested with Ctrl-C.
+2026-06-02 13:19:54,011 | INFO | telegram.ext.Application | Application started
+2026-06-02 13:20:29,455 | INFO | detection_app | Starting detection loop.
+2026-06-02 17:50:07,050 | ERROR | telegram.ext.Application | No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\ext\_utils\networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\ext\_utils\networkloop.py", line 154, in do_action
+    action_cb_task.result()
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\ext\_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\ext\_extbot.py", line 672, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\_bot.py", line 4865, in get_updates
+    await self._post(
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\_bot.py", line 704, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\ext\_extbot.py", line 370, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\_bot.py", line 733, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\request\_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\request\_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-06-02 17:50:12,105 | ERROR | telegram.ext.Application | No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\ext\_utils\networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\ext\_utils\networkloop.py", line 154, in do_action
+    action_cb_task.result()
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\ext\_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\ext\_extbot.py", line 672, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\_bot.py", line 4865, in get_updates
+    await self._post(
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\_bot.py", line 704, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\ext\_extbot.py", line 370, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\_bot.py", line 733, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\request\_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\request\_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-06-02 17:50:18,148 | ERROR | telegram.ext.Application | No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\ext\_utils\networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\ext\_utils\networkloop.py", line 154, in do_action
+    action_cb_task.result()
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\ext\_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\ext\_extbot.py", line 672, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\_bot.py", line 4865, in get_updates
+    await self._post(
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\_bot.py", line 704, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\ext\_extbot.py", line 370, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\_bot.py", line 733, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\request\_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\request\_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-06-02 17:50:25,709 | ERROR | telegram.ext.Application | No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\ext\_utils\networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\ext\_utils\networkloop.py", line 154, in do_action
+    action_cb_task.result()
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\ext\_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\ext\_extbot.py", line 672, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\_bot.py", line 4865, in get_updates
+    await self._post(
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\_bot.py", line 704, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\ext\_extbot.py", line 370, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\_bot.py", line 733, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\request\_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\request\_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-06-02 17:56:14,092 | INFO | detection_app | Shutdown requested with Ctrl-C.
+2026-06-02 17:56:47,039 | INFO | telegram.ext.Application | Application started
+2026-06-02 17:57:20,837 | INFO | detection_app | Starting detection loop.
+2026-06-02 20:09:52,670 | INFO | root | Starting broadcast to 3 subscribers.
+2026-06-02 20:09:54,019 | INFO | detection_app | Detection at Pos. 2.11!  (Temp: 24.4°C, RH: 39.0%, Precip: 0.0mm) - Alarm triggered.
+2026-06-02 20:15:27,438 | INFO | root | Successfully sent video to 5894386665
+2026-06-02 20:15:46,947 | INFO | root | Alert Cam1_20260602200931 vote by 5894386665: nofire; counts fire=0, nofire=1, unclear=0
+2026-06-02 21:15:06,225 | INFO | detection_app | Currently nighttime. Detection loop paused.
+2026-06-03 00:00:12,128 | INFO | detection_app | Currently nighttime. Detection loop paused.
+2026-06-03 05:13:15,849 | INFO | detection_app | Starting detection loop.
+2026-06-03 05:15:40,166 | INFO | detection_app | Detection at Pos. 2.8 but no alarm triggered  (Temp: 13.4°C, RH: 88.0%, Precip: 0.0mm)
+2026-06-03 05:16:27,036 | INFO | detection_app | Detection at Pos. 2.9 but no alarm triggered  (Temp: 13.4°C, RH: 88.0%, Precip: 0.0mm)
+2026-06-03 05:38:32,053 | INFO | detection_app | Detection at Pos. 1.12 but no alarm triggered  (Temp: 13.4°C, RH: 88.0%, Precip: 0.0mm)
+2026-06-03 05:50:25,966 | INFO | detection_app | Detection at Pos. 1.8 but no alarm triggered  (Temp: 13.4°C, RH: 88.0%, Precip: 0.0mm)
+2026-06-03 05:58:00,785 | INFO | detection_app | Detection at Pos. 2.8 but no alarm triggered  (Temp: 13.4°C, RH: 88.0%, Precip: 0.0mm)
+2026-06-03 06:04:46,145 | INFO | detection_app | Detection at Pos. 1.8 but no alarm triggered  (Temp: 13.4°C, RH: 88.0%, Precip: 0.0mm)
+2026-06-03 06:06:15,170 | INFO | detection_app | Detection at Pos. 1.10 but no alarm triggered  (Temp: 13.4°C, RH: 88.0%, Precip: 0.0mm)
+2026-06-03 06:10:45,308 | INFO | detection_app | Detection at Pos. 2.5 but no alarm triggered  (Temp: 13.4°C, RH: 88.0%, Precip: 0.0mm)
+2026-06-03 06:47:36,775 | INFO | detection_app | Detection at Pos. 1.10 but no alarm triggered  (Temp: 13.1°C, RH: 89.0%, Precip: 0.0mm)
+2026-06-03 06:54:30,463 | INFO | detection_app | Detection at Pos. 2.9 but no alarm triggered  (Temp: 13.1°C, RH: 89.0%, Precip: 0.0mm)
+2026-06-03 07:01:17,916 | INFO | detection_app | Detection at Pos. 1.9 but no alarm triggered  (Temp: 13.1°C, RH: 89.0%, Precip: 0.0mm)
+2026-06-03 07:08:36,355 | INFO | detection_app | Detection at Pos. 2.9 but no alarm triggered  (Temp: 13.1°C, RH: 89.0%, Precip: 0.0mm)
+2026-06-03 07:15:33,302 | INFO | detection_app | Detection at Pos. 1.9 but no alarm triggered  (Temp: 13.5°C, RH: 87.0%, Precip: 0.0mm)
+2026-06-03 07:16:25,503 | INFO | detection_app | Detection at Pos. 1.10 but no alarm triggered  (Temp: 13.5°C, RH: 87.0%, Precip: 0.0mm)
+2026-06-03 07:22:30,072 | INFO | detection_app | Detection at Pos. 2.8 but no alarm triggered  (Temp: 13.5°C, RH: 87.0%, Precip: 0.0mm)
+2026-06-03 07:24:42,213 | INFO | detection_app | Detection at Pos. 2.11 but no alarm triggered  (Temp: 13.5°C, RH: 87.0%, Precip: 0.0mm)
+2026-06-03 07:30:21,819 | INFO | detection_app | Detection at Pos. 1.9 but no alarm triggered  (Temp: 13.5°C, RH: 87.0%, Precip: 0.0mm)
+2026-06-03 07:31:49,693 | INFO | detection_app | Detection at Pos. 1.11 but no alarm triggered  (Temp: 13.5°C, RH: 87.0%, Precip: 0.0mm)
+2026-06-03 07:37:22,492 | INFO | detection_app | Detection at Pos. 2.8 but no alarm triggered  (Temp: 13.5°C, RH: 87.0%, Precip: 0.0mm)
+2026-06-03 07:44:29,732 | INFO | detection_app | Detection at Pos. 1.9 but no alarm triggered  (Temp: 13.5°C, RH: 87.0%, Precip: 0.0mm)
+2026-06-03 07:51:06,111 | INFO | detection_app | Detection at Pos. 2.8 but no alarm triggered  (Temp: 13.5°C, RH: 87.0%, Precip: 0.0mm)
+2026-06-03 08:18:38,499 | INFO | detection_app | Detection at Pos. 2.9 but no alarm triggered  (Temp: 13.8°C, RH: 85.0%, Precip: 0.0mm)
+2026-06-03 08:25:14,751 | INFO | detection_app | Detection at Pos. 1.9 but no alarm triggered  (Temp: 13.8°C, RH: 85.0%, Precip: 0.0mm)
+2026-06-03 08:32:54,400 | INFO | detection_app | Detection at Pos. 2.10 but no alarm triggered  (Temp: 13.8°C, RH: 85.0%, Precip: 0.0mm)
+2026-06-03 11:55:37,121 | INFO | detection_app | Shutdown requested with Ctrl-C.
+2026-06-03 11:56:16,839 | INFO | telegram.ext.Application | Application started
+2026-06-03 11:56:50,700 | INFO | detection_app | Starting detection loop.
+2026-06-03 16:21:25,275 | INFO | detection_app | Shutdown requested with Ctrl-C.
+2026-06-03 16:21:59,569 | INFO | telegram.ext.Application | Application started
+2026-06-03 16:22:52,554 | INFO | detection_app | Starting detection loop.
+2026-06-03 17:47:45,600 | ERROR | detection_app | Detection failed (attempt 1/3): list indices must be integers or slices, not str
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 110, in <module>
+    alarm_package = detection_orchestrator.create_alarm_package(detection_data, temp, rh, precipitation)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 61, in create_alarm_package
+    "pos_value": detection_data['position'],
+                 ~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+2026-06-03 17:47:45,642 | INFO | detection_app | Retrying in 5s...
+2026-06-03 21:15:58,979 | INFO | detection_app | Currently nighttime. Detection loop paused.
+2026-06-04 00:00:01,530 | INFO | detection_app | Currently nighttime. Detection loop paused.
+2026-06-04 05:12:24,250 | INFO | detection_app | Starting detection loop.
+2026-06-04 07:21:33,051 | ERROR | detection_app | Detection failed (attempt 1/3): list indices must be integers or slices, not str
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 110, in <module>
+    alarm_package = detection_orchestrator.create_alarm_package(detection_data, temp, rh, precipitation)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 61, in create_alarm_package
+    "pos_value": detection_data['position'],
+                 ~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+2026-06-04 07:21:33,080 | INFO | detection_app | Retrying in 5s...
+2026-06-04 07:28:50,170 | ERROR | detection_app | Detection failed (attempt 2/3): list indices must be integers or slices, not str
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 110, in <module>
+    alarm_package = detection_orchestrator.create_alarm_package(detection_data, temp, rh, precipitation)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 61, in create_alarm_package
+    "pos_value": detection_data['position'],
+                 ~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+2026-06-04 07:28:50,190 | INFO | detection_app | Retrying in 10s...
+2026-06-04 07:36:27,881 | ERROR | detection_app | Detection failed (attempt 3/3): list indices must be integers or slices, not str
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 110, in <module>
+    alarm_package = detection_orchestrator.create_alarm_package(detection_data, temp, rh, precipitation)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 61, in create_alarm_package
+    "pos_value": detection_data['position'],
+                 ~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+2026-06-04 07:36:27,901 | WARNING | detection_app | Frame failed (1/5 consecutive)
+2026-06-04 07:40:53,118 | ERROR | detection_app | Detection failed (attempt 1/3): list indices must be integers or slices, not str
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 110, in <module>
+    alarm_package = detection_orchestrator.create_alarm_package(detection_data, temp, rh, precipitation)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 61, in create_alarm_package
+    "pos_value": detection_data['position'],
+                 ~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+2026-06-04 07:40:53,161 | INFO | detection_app | Retrying in 5s...
+2026-06-04 07:44:49,201 | ERROR | detection_app | Detection failed (attempt 2/3): list indices must be integers or slices, not str
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 110, in <module>
+    alarm_package = detection_orchestrator.create_alarm_package(detection_data, temp, rh, precipitation)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 61, in create_alarm_package
+    "pos_value": detection_data['position'],
+                 ~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+2026-06-04 07:44:49,224 | INFO | detection_app | Retrying in 10s...
+2026-06-04 07:53:08,574 | ERROR | detection_app | Detection failed (attempt 3/3): list indices must be integers or slices, not str
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 110, in <module>
+    alarm_package = detection_orchestrator.create_alarm_package(detection_data, temp, rh, precipitation)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 61, in create_alarm_package
+    "pos_value": detection_data['position'],
+                 ~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+2026-06-04 07:53:08,595 | WARNING | detection_app | Frame failed (2/5 consecutive)
+2026-06-04 08:21:20,068 | ERROR | detection_app | Detection failed (attempt 1/3): list indices must be integers or slices, not str
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 110, in <module>
+    alarm_package = detection_orchestrator.create_alarm_package(detection_data, temp, rh, precipitation)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 61, in create_alarm_package
+    "pos_value": detection_data['position'],
+                 ~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+2026-06-04 08:21:20,087 | INFO | detection_app | Retrying in 5s...
+2026-06-04 08:37:36,390 | ERROR | detection_app | Detection failed (attempt 2/3): list indices must be integers or slices, not str
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 110, in <module>
+    alarm_package = detection_orchestrator.create_alarm_package(detection_data, temp, rh, precipitation)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 61, in create_alarm_package
+    "pos_value": detection_data['position'],
+                 ~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+2026-06-04 08:37:36,415 | INFO | detection_app | Retrying in 10s...
+2026-06-04 08:52:02,014 | ERROR | detection_app | Detection failed (attempt 3/3): list indices must be integers or slices, not str
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 110, in <module>
+    alarm_package = detection_orchestrator.create_alarm_package(detection_data, temp, rh, precipitation)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 61, in create_alarm_package
+    "pos_value": detection_data['position'],
+                 ~~~~~~~~~~~~~~^^^^^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+2026-06-04 08:52:02,037 | WARNING | detection_app | Frame failed (3/5 consecutive)
+2026-06-04 11:05:20,727 | INFO | detection_app | Shutdown requested with Ctrl-C.
+2026-06-04 11:05:44,358 | INFO | telegram.ext.Application | Application started
+2026-06-04 11:08:16,642 | INFO | telegram.ext.Application | Application started
+2026-06-04 11:08:49,145 | INFO | detection_app | Starting detection loop.
+2026-06-04 17:40:14,828 | ERROR | detection_app | Detection failed (attempt 1/3): '<=' not supported between instances of 'int' and 'tuple'
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 115, in <module>
+    telegram_bot.send_review_sync(
+  File "u:\Fraunhofer Waldbrand\Camera_test\telegram_bot.py", line 323, in send_review_sync
+    return asyncio.run(
+           ^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\telegram_bot.py", line 252, in send_review
+    position = cam.translate_in_cam_preset(position)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\VAPIXcamera.py", line 477, in translate_in_cam_preset
+    return self.in_cam_preset_no(preset_no)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\VAPIXcamera.py", line 443, in in_cam_preset_no
+    if 18 <= preset_no <= 31:
+       ^^^^^^^^^^^^^^^^^^^^^
+TypeError: '<=' not supported between instances of 'int' and 'tuple'
+2026-06-04 17:40:14,898 | INFO | detection_app | Retrying in 5s...
+2026-06-04 21:16:55,121 | INFO | detection_app | Currently nighttime. Detection loop paused.
+2026-06-05 00:00:18,843 | INFO | detection_app | Currently nighttime. Detection loop paused.
+2026-06-05 05:12:02,190 | INFO | detection_app | Starting detection loop.
+2026-06-05 05:12:25,997 | ERROR | detection_app | Detection failed (attempt 1/3): '<=' not supported between instances of 'int' and 'tuple'
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 115, in <module>
+    telegram_bot.send_review_sync(
+  File "u:\Fraunhofer Waldbrand\Camera_test\telegram_bot.py", line 323, in send_review_sync
+    return asyncio.run(
+           ^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\telegram_bot.py", line 252, in send_review
+    position = cam.translate_in_cam_preset(position)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\VAPIXcamera.py", line 477, in translate_in_cam_preset
+    return self.in_cam_preset_no(preset_no)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\VAPIXcamera.py", line 443, in in_cam_preset_no
+    if 18 <= preset_no <= 31:
+       ^^^^^^^^^^^^^^^^^^^^^
+TypeError: '<=' not supported between instances of 'int' and 'tuple'
+2026-06-05 05:12:26,036 | INFO | detection_app | Retrying in 5s...
+2026-06-05 05:12:56,000 | ERROR | detection_app | Detection failed (attempt 2/3): '<=' not supported between instances of 'int' and 'tuple'
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 115, in <module>
+    telegram_bot.send_review_sync(
+  File "u:\Fraunhofer Waldbrand\Camera_test\telegram_bot.py", line 323, in send_review_sync
+    return asyncio.run(
+           ^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\telegram_bot.py", line 252, in send_review
+    position = cam.translate_in_cam_preset(position)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\VAPIXcamera.py", line 477, in translate_in_cam_preset
+    return self.in_cam_preset_no(preset_no)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\VAPIXcamera.py", line 443, in in_cam_preset_no
+    if 18 <= preset_no <= 31:
+       ^^^^^^^^^^^^^^^^^^^^^
+TypeError: '<=' not supported between instances of 'int' and 'tuple'
+2026-06-05 05:12:56,038 | INFO | detection_app | Retrying in 10s...
+2026-06-05 05:17:32,242 | ERROR | detection_app | Detection failed (attempt 3/3): '<=' not supported between instances of 'int' and 'tuple'
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 115, in <module>
+    telegram_bot.send_review_sync(
+  File "u:\Fraunhofer Waldbrand\Camera_test\telegram_bot.py", line 323, in send_review_sync
+    return asyncio.run(
+           ^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\telegram_bot.py", line 252, in send_review
+    position = cam.translate_in_cam_preset(position)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\VAPIXcamera.py", line 477, in translate_in_cam_preset
+    return self.in_cam_preset_no(preset_no)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\VAPIXcamera.py", line 443, in in_cam_preset_no
+    if 18 <= preset_no <= 31:
+       ^^^^^^^^^^^^^^^^^^^^^
+TypeError: '<=' not supported between instances of 'int' and 'tuple'
+2026-06-05 05:17:32,279 | WARNING | detection_app | Frame failed (1/5 consecutive)
+2026-06-05 05:18:14,889 | ERROR | detection_app | Detection failed (attempt 1/3): '<=' not supported between instances of 'int' and 'tuple'
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 115, in <module>
+    telegram_bot.send_review_sync(
+  File "u:\Fraunhofer Waldbrand\Camera_test\telegram_bot.py", line 323, in send_review_sync
+    return asyncio.run(
+           ^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\telegram_bot.py", line 252, in send_review
+    position = cam.translate_in_cam_preset(position)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\VAPIXcamera.py", line 477, in translate_in_cam_preset
+    return self.in_cam_preset_no(preset_no)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\VAPIXcamera.py", line 443, in in_cam_preset_no
+    if 18 <= preset_no <= 31:
+       ^^^^^^^^^^^^^^^^^^^^^
+TypeError: '<=' not supported between instances of 'int' and 'tuple'
+2026-06-05 05:18:14,930 | INFO | detection_app | Retrying in 5s...
+2026-06-05 05:27:44,156 | ERROR | detection_app | Detection failed (attempt 2/3): '<=' not supported between instances of 'int' and 'tuple'
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 115, in <module>
+    telegram_bot.send_review_sync(
+  File "u:\Fraunhofer Waldbrand\Camera_test\telegram_bot.py", line 323, in send_review_sync
+    return asyncio.run(
+           ^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\telegram_bot.py", line 252, in send_review
+    position = cam.translate_in_cam_preset(position)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\VAPIXcamera.py", line 477, in translate_in_cam_preset
+    return self.in_cam_preset_no(preset_no)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\VAPIXcamera.py", line 443, in in_cam_preset_no
+    if 18 <= preset_no <= 31:
+       ^^^^^^^^^^^^^^^^^^^^^
+TypeError: '<=' not supported between instances of 'int' and 'tuple'
+2026-06-05 05:27:44,187 | INFO | detection_app | Retrying in 10s...
+2026-06-05 05:32:12,038 | ERROR | detection_app | Detection failed (attempt 3/3): '<=' not supported between instances of 'int' and 'tuple'
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 115, in <module>
+    telegram_bot.send_review_sync(
+  File "u:\Fraunhofer Waldbrand\Camera_test\telegram_bot.py", line 323, in send_review_sync
+    return asyncio.run(
+           ^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\telegram_bot.py", line 252, in send_review
+    position = cam.translate_in_cam_preset(position)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\VAPIXcamera.py", line 477, in translate_in_cam_preset
+    return self.in_cam_preset_no(preset_no)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\VAPIXcamera.py", line 443, in in_cam_preset_no
+    if 18 <= preset_no <= 31:
+       ^^^^^^^^^^^^^^^^^^^^^
+TypeError: '<=' not supported between instances of 'int' and 'tuple'
+2026-06-05 05:32:12,066 | WARNING | detection_app | Frame failed (2/5 consecutive)
+2026-06-05 05:34:09,077 | ERROR | detection_app | Detection failed (attempt 1/3): '<=' not supported between instances of 'int' and 'tuple'
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 115, in <module>
+    telegram_bot.send_review_sync(
+  File "u:\Fraunhofer Waldbrand\Camera_test\telegram_bot.py", line 323, in send_review_sync
+    return asyncio.run(
+           ^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\telegram_bot.py", line 252, in send_review
+    position = cam.translate_in_cam_preset(position)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\VAPIXcamera.py", line 477, in translate_in_cam_preset
+    return self.in_cam_preset_no(preset_no)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\VAPIXcamera.py", line 443, in in_cam_preset_no
+    if 18 <= preset_no <= 31:
+       ^^^^^^^^^^^^^^^^^^^^^
+TypeError: '<=' not supported between instances of 'int' and 'tuple'
+2026-06-05 05:34:09,108 | INFO | detection_app | Retrying in 5s...
+2026-06-05 05:37:37,317 | ERROR | detection_app | Detection failed (attempt 2/3): '<=' not supported between instances of 'int' and 'tuple'
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 115, in <module>
+    telegram_bot.send_review_sync(
+  File "u:\Fraunhofer Waldbrand\Camera_test\telegram_bot.py", line 323, in send_review_sync
+    return asyncio.run(
+           ^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\telegram_bot.py", line 252, in send_review
+    position = cam.translate_in_cam_preset(position)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\VAPIXcamera.py", line 477, in translate_in_cam_preset
+    return self.in_cam_preset_no(preset_no)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\VAPIXcamera.py", line 443, in in_cam_preset_no
+    if 18 <= preset_no <= 31:
+       ^^^^^^^^^^^^^^^^^^^^^
+TypeError: '<=' not supported between instances of 'int' and 'tuple'
+2026-06-05 05:37:37,357 | INFO | detection_app | Retrying in 10s...
+2026-06-05 05:42:50,876 | ERROR | detection_app | Detection failed (attempt 3/3): '<=' not supported between instances of 'int' and 'tuple'
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 115, in <module>
+    telegram_bot.send_review_sync(
+  File "u:\Fraunhofer Waldbrand\Camera_test\telegram_bot.py", line 323, in send_review_sync
+    return asyncio.run(
+           ^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\telegram_bot.py", line 252, in send_review
+    position = cam.translate_in_cam_preset(position)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\VAPIXcamera.py", line 477, in translate_in_cam_preset
+    return self.in_cam_preset_no(preset_no)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\VAPIXcamera.py", line 443, in in_cam_preset_no
+    if 18 <= preset_no <= 31:
+       ^^^^^^^^^^^^^^^^^^^^^
+TypeError: '<=' not supported between instances of 'int' and 'tuple'
+2026-06-05 05:42:50,911 | WARNING | detection_app | Frame failed (3/5 consecutive)
+2026-06-05 05:48:30,788 | ERROR | detection_app | Detection failed (attempt 1/3): '<=' not supported between instances of 'int' and 'tuple'
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 115, in <module>
+    telegram_bot.send_review_sync(
+  File "u:\Fraunhofer Waldbrand\Camera_test\telegram_bot.py", line 323, in send_review_sync
+    return asyncio.run(
+           ^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\telegram_bot.py", line 252, in send_review
+    position = cam.translate_in_cam_preset(position)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\VAPIXcamera.py", line 477, in translate_in_cam_preset
+    return self.in_cam_preset_no(preset_no)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\VAPIXcamera.py", line 443, in in_cam_preset_no
+    if 18 <= preset_no <= 31:
+       ^^^^^^^^^^^^^^^^^^^^^
+TypeError: '<=' not supported between instances of 'int' and 'tuple'
+2026-06-05 05:48:30,822 | INFO | detection_app | Retrying in 5s...
+2026-06-05 05:53:25,389 | ERROR | detection_app | Detection failed (attempt 2/3): '<=' not supported between instances of 'int' and 'tuple'
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 115, in <module>
+    telegram_bot.send_review_sync(
+  File "u:\Fraunhofer Waldbrand\Camera_test\telegram_bot.py", line 323, in send_review_sync
+    return asyncio.run(
+           ^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\telegram_bot.py", line 252, in send_review
+    position = cam.translate_in_cam_preset(position)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\VAPIXcamera.py", line 477, in translate_in_cam_preset
+    return self.in_cam_preset_no(preset_no)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\VAPIXcamera.py", line 443, in in_cam_preset_no
+    if 18 <= preset_no <= 31:
+       ^^^^^^^^^^^^^^^^^^^^^
+TypeError: '<=' not supported between instances of 'int' and 'tuple'
+2026-06-05 05:53:25,426 | INFO | detection_app | Retrying in 10s...
+2026-06-05 05:53:58,264 | ERROR | detection_app | Detection failed (attempt 3/3): '<=' not supported between instances of 'int' and 'tuple'
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 115, in <module>
+    telegram_bot.send_review_sync(
+  File "u:\Fraunhofer Waldbrand\Camera_test\telegram_bot.py", line 323, in send_review_sync
+    return asyncio.run(
+           ^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\telegram_bot.py", line 252, in send_review
+    position = cam.translate_in_cam_preset(position)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\VAPIXcamera.py", line 477, in translate_in_cam_preset
+    return self.in_cam_preset_no(preset_no)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\VAPIXcamera.py", line 443, in in_cam_preset_no
+    if 18 <= preset_no <= 31:
+       ^^^^^^^^^^^^^^^^^^^^^
+TypeError: '<=' not supported between instances of 'int' and 'tuple'
+2026-06-05 05:53:58,292 | WARNING | detection_app | Frame failed (4/5 consecutive)
+2026-06-05 05:59:51,505 | ERROR | detection_app | Detection failed (attempt 1/3): '<=' not supported between instances of 'int' and 'tuple'
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 115, in <module>
+    telegram_bot.send_review_sync(
+  File "u:\Fraunhofer Waldbrand\Camera_test\telegram_bot.py", line 323, in send_review_sync
+    return asyncio.run(
+           ^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\telegram_bot.py", line 252, in send_review
+    position = cam.translate_in_cam_preset(position)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\VAPIXcamera.py", line 477, in translate_in_cam_preset
+    return self.in_cam_preset_no(preset_no)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\VAPIXcamera.py", line 443, in in_cam_preset_no
+    if 18 <= preset_no <= 31:
+       ^^^^^^^^^^^^^^^^^^^^^
+TypeError: '<=' not supported between instances of 'int' and 'tuple'
+2026-06-05 05:59:51,542 | INFO | detection_app | Retrying in 5s...
+2026-06-05 06:01:23,982 | ERROR | detection_app | Detection failed (attempt 2/3): '<=' not supported between instances of 'int' and 'tuple'
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 115, in <module>
+    telegram_bot.send_review_sync(
+  File "u:\Fraunhofer Waldbrand\Camera_test\telegram_bot.py", line 323, in send_review_sync
+    return asyncio.run(
+           ^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\telegram_bot.py", line 252, in send_review
+    position = cam.translate_in_cam_preset(position)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\VAPIXcamera.py", line 477, in translate_in_cam_preset
+    return self.in_cam_preset_no(preset_no)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\VAPIXcamera.py", line 443, in in_cam_preset_no
+    if 18 <= preset_no <= 31:
+       ^^^^^^^^^^^^^^^^^^^^^
+TypeError: '<=' not supported between instances of 'int' and 'tuple'
+2026-06-05 06:01:24,013 | INFO | detection_app | Retrying in 10s...
+2026-06-05 06:05:46,500 | ERROR | detection_app | Detection failed (attempt 3/3): '<=' not supported between instances of 'int' and 'tuple'
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 115, in <module>
+    telegram_bot.send_review_sync(
+  File "u:\Fraunhofer Waldbrand\Camera_test\telegram_bot.py", line 323, in send_review_sync
+    return asyncio.run(
+           ^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\telegram_bot.py", line 252, in send_review
+    position = cam.translate_in_cam_preset(position)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\VAPIXcamera.py", line 477, in translate_in_cam_preset
+    return self.in_cam_preset_no(preset_no)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\VAPIXcamera.py", line 443, in in_cam_preset_no
+    if 18 <= preset_no <= 31:
+       ^^^^^^^^^^^^^^^^^^^^^
+TypeError: '<=' not supported between instances of 'int' and 'tuple'
+2026-06-05 06:05:46,539 | WARNING | detection_app | Frame failed (5/5 consecutive)
+2026-06-05 06:05:46,543 | CRITICAL | detection_app | Shutting down due to too many consecutive failures: '<=' not supported between instances of 'int' and 'tuple'
+2026-06-05 09:52:21,446 | INFO | telegram.ext.Application | Application started
+2026-06-05 09:52:53,496 | INFO | detection_app | Starting detection loop.
+2026-06-05 09:54:07,494 | INFO | detection_app | Shutdown requested with Ctrl-C.
+2026-06-05 09:54:40,291 | INFO | telegram.ext.Application | Application started
+2026-06-05 09:55:12,471 | INFO | detection_app | Starting detection loop.
+2026-06-05 09:55:15,692 | ERROR | detection_app | Detection failed (attempt 1/3): 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 111, in <module>
+    alarm_package = detection_orchestrator.create_alarm_package(detection_data, temp, rh, precipitation)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 58, in create_alarm_package
+    detection_data["image_filepaths"], video_path = self.get_zoomed_video(alert_id, detection_data)
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 50, in get_zoomed_video
+    self.cam.area_zoom(lowest_point[1].item(), lowest_point[0].item())
+                       ~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2026-06-05 09:55:15,717 | INFO | detection_app | Retrying in 5s...
+2026-06-05 09:55:23,189 | ERROR | detection_app | Detection failed (attempt 2/3): 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 111, in <module>
+    alarm_package = detection_orchestrator.create_alarm_package(detection_data, temp, rh, precipitation)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 58, in create_alarm_package
+    detection_data["image_filepaths"], video_path = self.get_zoomed_video(alert_id, detection_data)
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 50, in get_zoomed_video
+    self.cam.area_zoom(lowest_point[1].item(), lowest_point[0].item())
+                       ~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2026-06-05 09:55:23,200 | INFO | detection_app | Retrying in 10s...
+2026-06-05 09:55:37,228 | ERROR | detection_app | Detection failed (attempt 3/3): 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 111, in <module>
+    alarm_package = detection_orchestrator.create_alarm_package(detection_data, temp, rh, precipitation)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 58, in create_alarm_package
+    detection_data["image_filepaths"], video_path = self.get_zoomed_video(alert_id, detection_data)
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 50, in get_zoomed_video
+    self.cam.area_zoom(lowest_point[1].item(), lowest_point[0].item())
+                       ~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2026-06-05 09:55:37,256 | WARNING | detection_app | Frame failed (1/5 consecutive)
+2026-06-05 09:55:42,873 | INFO | detection_app | Shutdown requested with Ctrl-C.
+2026-06-05 10:23:18,149 | INFO | telegram.ext.Application | Application started
+2026-06-05 10:23:51,444 | INFO | detection_app | Starting detection loop.
+2026-06-05 10:23:55,121 | ERROR | detection_app | Detection failed (attempt 1/3): 'int' object has no attribute 'item'
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 112, in <module>
+    alarm_package = detection_orchestrator.create_alarm_package(detection_data, temp, rh, precipitation)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 59, in create_alarm_package
+    detection_data["image_filepaths"], video_path = self.get_zoomed_video(alert_id, detection_data)
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 51, in get_zoomed_video
+    self.cam.area_zoom(lowest_point[1].item(), lowest_point[0].item())
+                       ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'int' object has no attribute 'item'
+2026-06-05 10:23:55,140 | INFO | detection_app | Retrying in 5s...
+2026-06-05 10:24:03,068 | ERROR | detection_app | Detection failed (attempt 2/3): 'int' object has no attribute 'item'
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 112, in <module>
+    alarm_package = detection_orchestrator.create_alarm_package(detection_data, temp, rh, precipitation)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 59, in create_alarm_package
+    detection_data["image_filepaths"], video_path = self.get_zoomed_video(alert_id, detection_data)
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 51, in get_zoomed_video
+    self.cam.area_zoom(lowest_point[1].item(), lowest_point[0].item())
+                       ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'int' object has no attribute 'item'
+2026-06-05 10:24:03,086 | INFO | detection_app | Retrying in 10s...
+2026-06-05 10:24:11,662 | INFO | detection_app | Shutdown requested with Ctrl-C.
+2026-06-05 10:27:34,994 | INFO | telegram.ext.Application | Application started
+2026-06-05 10:28:08,186 | INFO | detection_app | Starting detection loop.
+2026-06-05 10:28:11,655 | ERROR | detection_app | Detection failed (attempt 1/3): index 1 is out of bounds for dimension 0 with size 1
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 113, in <module>
+    alarm_package = detection_orchestrator.create_alarm_package(detection_data, temp, rh, precipitation)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 59, in create_alarm_package
+    detection_data["image_filepaths"], video_path = self.get_zoomed_video(alert_id, detection_data)
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 51, in get_zoomed_video
+    self.cam.area_zoom(lowest_point[1].item(), lowest_point[0].item())
+                       ~~~~~~~~~~~~^^^
+IndexError: index 1 is out of bounds for dimension 0 with size 1
+2026-06-05 10:28:11,674 | INFO | detection_app | Retrying in 5s...
+2026-06-05 10:28:19,820 | ERROR | detection_app | Detection failed (attempt 2/3): index 1 is out of bounds for dimension 0 with size 1
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 113, in <module>
+    alarm_package = detection_orchestrator.create_alarm_package(detection_data, temp, rh, precipitation)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 59, in create_alarm_package
+    detection_data["image_filepaths"], video_path = self.get_zoomed_video(alert_id, detection_data)
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\DetectionOrchestrator.py", line 51, in get_zoomed_video
+    self.cam.area_zoom(lowest_point[1].item(), lowest_point[0].item())
+                       ~~~~~~~~~~~~^^^
+IndexError: index 1 is out of bounds for dimension 0 with size 1
+2026-06-05 10:28:19,834 | INFO | detection_app | Retrying in 10s...
+2026-06-05 10:28:20,179 | INFO | detection_app | Shutdown requested with Ctrl-C.
+2026-06-05 10:30:39,765 | INFO | telegram.ext.Application | Application started
+2026-06-05 10:31:11,971 | INFO | detection_app | Starting detection loop.
+2026-06-05 10:31:30,111 | ERROR | detection_app | Detection failed (attempt 1/3): object of type 'int' has no len()
+Traceback (most recent call last):
+  File "u:\Fraunhofer Waldbrand\Camera_test\test_loop.py", line 121, in <module>
+    telegram_bot.send_review_sync(
+  File "u:\Fraunhofer Waldbrand\Camera_test\telegram_bot.py", line 323, in send_review_sync
+    return asyncio.run(
+           ^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\asyncio\base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "u:\Fraunhofer Waldbrand\Camera_test\telegram_bot.py", line 274, in send_review
+    logger.info(f"Starting broadcast to {len(self.subscribers)} subscribers.")
+                                         ^^^^^^^^^^^^^^^^^^^^^
+TypeError: object of type 'int' has no len()
+2026-06-05 10:31:30,147 | INFO | detection_app | Retrying in 5s...
+2026-06-05 10:31:39,365 | INFO | detection_app | Shutdown requested with Ctrl-C.
+2026-06-05 10:32:41,201 | INFO | telegram.ext.Application | Application started
+2026-06-05 10:33:15,582 | INFO | detection_app | Starting detection loop.
+2026-06-05 10:33:33,904 | INFO | root | Starting broadcast to 1 subscribers.
+2026-06-05 10:33:34,722 | INFO | detection_app | Detection at Pos. 1.1!  (Temp: 15.2°C, RH: 74.0%, Precip: 0.0mm) - Alarm triggered.
+2026-06-05 10:33:56,410 | INFO | root | Alert Cam1_20260605103317 vote by 5894386665: nofire; counts fire=0, nofire=1, unclear=0
+2026-06-05 10:34:12,990 | INFO | root | Starting broadcast to 1 subscribers.
+2026-06-05 10:34:13,525 | INFO | detection_app | Detection at Pos. 1.2!  (Temp: 15.2°C, RH: 74.0%, Precip: 0.0mm) - Alarm triggered.
+2026-06-05 10:34:17,776 | INFO | detection_app | Shutdown requested with Ctrl-C.
+2026-06-05 10:35:32,015 | INFO | telegram.ext.Application | Application started
+2026-06-05 10:36:05,535 | INFO | detection_app | Starting detection loop.
+2026-06-05 11:17:43,331 | INFO | detection_app | Shutdown requested with Ctrl-C.
+2026-06-05 11:29:12,893 | INFO | telegram.ext.Application | Application started
+2026-06-05 11:29:45,256 | INFO | detection_app | Starting detection loop.

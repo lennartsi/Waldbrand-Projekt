@@ -1,7 +1,6 @@
+from logging import exception
 import time
-import datetime
 from io import BytesIO
-
 from bs4 import BeautifulSoup, FeatureNotFound
 from PIL import Image
 from requests import auth, get
@@ -19,12 +18,18 @@ class VAPIXCamera:
     Module for controlling AXIS cameras using VAPIX
     """
 
-    def __init__(self, ip, user, password, use_https=False):
+    def __init__(self, ip, user, password, cam_no, preset_positions=None, preset_map=None, longitude=None, latitude=None, use_https=False):
+        self.__ip = ip
         self.__username = user
         self.__password = password
-        protocol = 'https' if use_https else 'http'
-        self.__url = f'{protocol}://{ip}/axis-cgi/com/ptz.cgi'
-        self.__image_url = f'{protocol}://{ip}/axis-cgi/jpg/image.cgi'
+        self.cam_no = cam_no
+        self.preset_positions = preset_positions or []
+        self.preset_map = preset_map or {}
+        self.longitude = longitude
+        self.latitude = latitude
+        self.__protocol = 'https' if use_https else 'http'
+        self.__url = f'{self.__protocol}://{ip}/axis-cgi/com/ptz.cgi'
+        self.__image_url = f'{self.__protocol}://{ip}/axis-cgi/jpg/image.cgi'
 
     @staticmethod
     def __merge(*args) -> dict:
@@ -107,7 +112,7 @@ class VAPIXCamera:
         """
         return self.__cmd({'rpan': pan, 'rtilt': tilt, 'rzoom': zoom, 'speed': speed})
     
-    def center_move(self, pos_x: int, pos_y: int, speed: int):
+    def center_move(self, pos_x: int, pos_y: int, speed: int=100):
         """
         Used to send the coordinates for the point in the image where the user clicked.
         This information is then used by the server to calculate the pan/tilt move required to
@@ -124,7 +129,7 @@ class VAPIXCamera:
         pan_tilt = str(pos_x) + "," + str(pos_y)
         return self.__cmd({'center': pan_tilt, 'speed': speed})
     
-    def area_zoom(self, pos_x: int, pos_y: int, zoom: int, speed: int):
+    def area_zoom_relative(self, pos_x: int, pos_y: int, zoom: int=1400, speed: int=100):
         """
         Centers on positions x,y (like the center command) and zooms by a factor of z/100.
 
@@ -139,6 +144,23 @@ class VAPIXCamera:
         """
         x_y_zoom = str(pos_x) + "," + str(pos_y) + "," + str(zoom)
         return self.__cmd({'areazoom': x_y_zoom, 'speed': speed})
+    
+    def area_zoom(self, pos_x: int, pos_y: int, zoom: int=1450, speed: int=100):
+        """
+        Centers on positions x,y (like the center command) and zooms to a specific level.
+
+        Args:
+            pos_x: value of the X coordinate.
+            pos_y: value of the Y coordinate.
+            zoom: zooms to a specific level.
+            speed: speed move camera.
+        """
+        self.center_move(pos_x, pos_y)
+        self.wait_until_stopped()
+        position = self.get_ptz_status()
+        self.absolute_move(position[0], position[1], zoom, speed)
+        self.wait_until_stopped()
+
     
     def get_current_image(self):
         """
@@ -223,6 +245,7 @@ class VAPIXCamera:
 
         """
         return self.__cmd({'query': 'presetposcam'})
+    
     def list_all_preset(self):
         """
         List all available presets position.
@@ -245,13 +268,6 @@ class VAPIXCamera:
     def go_to_server_preset_name(self, name: str, speed: int):
         """
         Move to the position associated with the preset on server.
-
-        Args:
-            name: name of preset position server.
-            speed: speed move camera.
-
-        Returns:
-            Returns the response from the device to the command sent
         """
         return self.__cmd({'gotoserverpresetname': name, 'speed': speed})
     
@@ -266,7 +282,6 @@ class VAPIXCamera:
         for i in range(10):
             if self.get_status()[0] == 'no':
                 time.sleep(0.1)
-                #print("Not Moving")
             else:
                 started_moving = True
                 break
@@ -276,9 +291,7 @@ class VAPIXCamera:
             #print("Moving...")
             time.sleep(0.1)
             is_moving = self.get_status()[0]
-        #print("Focusing...")
         self.wait_focus()
-        #print("Done focusing.")
 
 
     def wait_focus(self):
@@ -311,18 +324,6 @@ class VAPIXCamera:
                         # else:
                             # print(f"Focus changed again, continuing to wait: {focus}"   )
 
-
-
-    # def get_focus_status(self):
-    #     """
-    #     Operation to request focus status.
-        
-    #     Returns:
-    #         Boolean indicating if focus is currently moving
-    #     """
-    #     focus = self.get_ptz_status()[3]
-    #     while
-    
     def get_optics_data(self):
         """
         Get detailed optics data from the camera.
@@ -338,8 +339,6 @@ class VAPIXCamera:
                 optics[key.strip()] = value.strip()
         return optics
     
-
-
     def get_limits(self):
         r = self.__cmd({'query': 'limits'})
         limits = {}
@@ -349,13 +348,14 @@ class VAPIXCamera:
                 limits[k.strip()] = v.strip()
         return limits
 
-    def save_image_with_metadata(self, path, image, timestamp, position, detected, mask=None):
+    def save_image_with_metadata(self, path, image, timestamp, position, detected, mask=None, zoomed=False):
         """
         Save image from camera with metadata including position and detection status.
         
         Args:
             path: directory path where the image will be saved
             timestamp: timestamp string for the filename
+            postition: tuple of (pan, tilt, zoom) values for the camera position
             detected: boolean indicating if something was detected (True/False)
         
         Returns:
@@ -371,8 +371,12 @@ class VAPIXCamera:
 
         # Format filename: time_{timestamp}_p:{pan},t:{tilt}_z:{zoom}_{yes/no}.jpg
         if mask==None:
-            filename = f"{timestamp}_({pan},{tilt},{zoom})_{detection_str}.jpg"
-            path = os.path.join(path, "original")
+            if zoomed:
+                filename = f"{timestamp}_({pan},{tilt},{zoom})_{detection_str}_zoomed.jpg"
+                path = os.path.join(path, "zoomed")
+            else:
+                filename = f"{timestamp}_({pan},{tilt},{zoom})_{detection_str}.jpg"
+                path = os.path.join(path, "original")
         else:
             filename = f"{timestamp}_({pan},{tilt},{zoom})_{detection_str}_mask{mask}.jpg"
             path = os.path.join(path, "cropped")
@@ -390,10 +394,89 @@ class VAPIXCamera:
             print("Failed to get image from camera")
             return None
 
+    def save_video_ffmpeg(self, path, alert_id, duration_seconds=10):
+        import subprocess
+        import imageio_ffmpeg
+        path = os.path.join(path, "video")
+        os.makedirs(path, exist_ok=True)
+        path = os.path.join(path, f"{alert_id}.mp4")
+
+        ffmpeg = imageio_ffmpeg.get_ffmpeg_exe()
+        assert ffmpeg is not None, "FFmpeg not available in current environment"
+
+        # Validate ffmpeg exists by running `ffmpeg -version` once.
+        try:
+            subprocess.run([ffmpeg, "-version"], capture_output=True, text=True, check=True)
+        except FileNotFoundError:
+            raise RuntimeError(f"ffmpeg executable not found: {ffmpeg}")
+        except subprocess.CalledProcessError as exc:
+            out = (exc.stderr or exc.stdout or "").strip()
+            raise RuntimeError(f"ffmpeg returned error during version check: {out}")
+
+        cmd = [
+            ffmpeg,
+            "-hide_banner",
+            "-loglevel", "error",
+            "-i", f"http://{self.__username}:{self.__password}@{self.__ip}/axis-cgi/media.cgi?videocodec=h264&container=mp4",
+            "-t", f"{duration_seconds}",
+            "-c", "copy",
+            "-y",
+            path,
+        ]
+
+        try:
+            # Capture stderr/stdout and use a timeout to avoid hangs.
+            result = subprocess.run(cmd, capture_output=True, text=True, timeout=duration_seconds + 10)
+        except subprocess.TimeoutExpired as exc:
+            raise RuntimeError(f"ffmpeg timed out after {exc.timeout} seconds") from exc
+
+        if result.returncode != 0:
+            stderr = (result.stderr or result.stdout or "").strip()
+            raise RuntimeError(f"ffmpeg failed (return code {result.returncode}): {stderr}")
+
+        return path
+
+    def translate_in_cam_preset(self, preset_no: int):
+        """
+        Translate a server preset number to the in-camera label based on the preset_map defined in config.yaml.
+        """
+        try:
+            pm = getattr(self, 'preset_map')
+            # try exact integer key first
+            if preset_no in pm:
+                return pm[preset_no]
+            # try string key
+            key = str(preset_no)
+            if key in pm:
+                return pm[key]
+        except Exception as e:
+            print(f"Error accessing preset_map: {e}")
+
+        return None
+        
+    def get_preset_image(self, preset_no: int):
+        """
+        Move to the specified preset position, wait until the camera has stopped moving.
+        Return the current image, postition and the preset number as named in camera.
+
+        Args:
+            preset_no: number of preset position server.
+
+        """
+        self.go_to_server_preset_number(preset_no, speed=100)
+        self.wait_until_stopped()
+        return self.get_current_image(), self.get_ptz_status()
 
 if __name__ == "__main__":
-    cam = VAPIXCamera("192.44.18.67", "lennart", "7v1wuUGGsE3W2R3GpGbg", use_https=False)
-    print(cam.get_limits())
+    from config import AppConfig
+    from camera_manager import create_cameras_from_configs
+    cfg = AppConfig.load()    # cam = VAPIXCamera("192.44.18.67", "lennart", password, use_https=False)
+    cam = create_cameras_from_configs(cfg.cameras)[0]
+    print(cam.translate_in_cam_preset(30))
+
+    # cam.save_video_ffmpeg(path=r"\\netappn1\SCS\50_Abteilungen\54_RSA\Sicherheitsforschung\smart_forrest_fire\Images\Smoke_T=0.5_VLM\Forestfire",
+    #                     alert_id=12345,
+    #                     duration_seconds=5)
 
 
 

@@ -10,6 +10,9 @@ env/
 __pycache__/
 *.pyc
 
+# VSCode
+.vscode/
+
 # Jupyter checkpoints
 .ipynb_checkpoints/
 
@@ -17,4 +20,18 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
-Images
+Images/
+
+# Config files
+*.yaml
+
+# Analyzed data
+*.json
+!position_data.json
+
+# Text files
+*.txt
+
+# Docker
+.dockerignore
+Dockerfile

@@ -14,7 +14,7 @@ class Sam3:
         self.processor = Sam3Processor.from_pretrained(model_id)
         self.threshold = threshold
 
-    def segment(self, image, text_prompt):
+    def segment(self, image, text_prompt="smoke"):
         inputs = self.processor(images=image, text=text_prompt, return_tensors="pt").to(self.device)
         with torch.no_grad():
             outputs = self.model(**inputs)
