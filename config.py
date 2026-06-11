@@ -60,7 +60,7 @@ class TelegramConfig:
     bot_token: str
     review_threshold: int
     subscribers: list[int]
-
+    testers: list[int]
 
 @dataclass
 class PathsConfig:
@@ -140,6 +140,7 @@ class AppConfig:
             bot_token=_env(tg["bot_token_env"]),
             review_threshold=tg["review_threshold"],
             subscribers=[s["chat_id"] for s in tg["subscribers"]],
+            testers=[t["chat_id"] for t in tg["testers"]],
         )
 
         # --- Healthchecks ---
@@ -158,3 +159,4 @@ class AppConfig:
 if __name__ == "__main__":
     cfg = AppConfig.load()
     print(cfg.telegram.subscribers)
+    print(cfg.telegram.testers)

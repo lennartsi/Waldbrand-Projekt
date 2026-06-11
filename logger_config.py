@@ -44,9 +44,6 @@ class ContextualLogger:
             self.logger.info(f"Detection at Pos. {position}! {weather_str} - Alarm triggered.")
         else:
             self.logger.info(f"Detection at Pos. {position} but no alarm triggered {weather_str}")
-            non_alarm_log_path = cam.image_paths['forestfire'] / "non_alarm_log.txt"
-            with non_alarm_log_path.open("a", encoding="utf-8") as f:
-                f.write(f"{datetime.datetime.now()}: Detection at Pos. {position} but no alarm triggered {weather_str}\n")
 
     
     def log_detection_cycle_start(self):

@@ -18,7 +18,7 @@ class VAPIXCamera:
     Module for controlling AXIS cameras using VAPIX
     """
 
-    def __init__(self, ip, user, password, cam_no, preset_positions=None, preset_map=None, longitude=None, latitude=None, use_https=False):
+    def __init__(self, ip, user, password, cam_no=0, preset_positions=None, preset_map=None, longitude=None, latitude=None, use_https=False):
         self.__ip = ip
         self.__username = user
         self.__password = password
