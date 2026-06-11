@@ -2394,3 +2394,32 @@ AttributeError: type object 'datetime.datetime' has no attribute 'timedelta'
 2026-06-11 15:44:10,482 | INFO | detection_app | Shutdown requested with Ctrl-C.
 2026-06-11 15:45:44,839 | INFO | telegram.ext.Application | Application started
 2026-06-11 15:46:19,201 | INFO | detection_app | Starting detection loop.
+2026-06-11 15:55:31,997 | ERROR | telegram.ext.Application | No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\ext\_utils\networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\ext\_utils\networkloop.py", line 154, in do_action
+    action_cb_task.result()
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\ext\_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\ext\_extbot.py", line 672, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\_bot.py", line 4865, in get_updates
+    await self._post(
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\_bot.py", line 704, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\ext\_extbot.py", line 370, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\_bot.py", line 733, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\request\_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\siethoff\AppData\Local\miniconda3\envs\sam3\Lib\site-packages\telegram\request\_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.NetworkError: Bad Gateway
