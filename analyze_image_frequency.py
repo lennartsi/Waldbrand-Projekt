@@ -57,7 +57,16 @@ def load_weather_data():
     df_now = pd.read_csv(url_now, compression="zip", sep=";")
     df_now.columns = df_now.columns.str.strip()
     df = pd.concat([df_recent, df_now], ignore_index=True)
-    return df
+
+    url_precip_recent = "https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/10_minutes/precipitation/recent/10minutenwerte_nieder_03668_akt.zip"
+    url_precip_now = "https://opendata.dwd.de/climate_environment/CDC/observations_germany/climate/10_minutes/precipitation/now/10minutenwerte_nieder_03668_now.zip"
+    df_precip_recent = pd.read_csv(url_precip_recent, compression="zip", sep=";")
+    df_precip_now = pd.read_csv(url_precip_now, compression="zip", sep=";")
+    df_precip_recent.columns = df_precip_recent.columns.str.strip()
+    df_precip_now.columns = df_precip_now.columns.str.strip()
+    df_precip = pd.concat([df_precip_recent, df_precip_now], ignore_index=True)
+
+    return df, df_precip
 
 def analyze_T_RH(data_path, date_str):
     '''Given a specific date in the format YYYYMMDD, returns the temperature and relative humidity values for each image in data_path.'''
@@ -71,7 +80,7 @@ def analyze_T_RH(data_path, date_str):
     df_now = pd.read_csv(url_now, compression="zip", sep=";")
     df_now.columns = df_now.columns.str.strip()
     df = pd.concat([df_recent, df_now], ignore_index=True)
-    df = load_weather_data()
+    df, df_precip = load_weather_data()
     # cut all content not from the given date
     df["MESS_DATUM"] = df["MESS_DATUM"].astype(str).str.zfill(12)
     day_df = df[df["MESS_DATUM"].str.startswith(date_str)].copy()
@@ -181,7 +190,6 @@ def get_wbi(date_str=None):
 
 
 def raw_data_per_image(data_path):
-    import pandas as pd
     if "chimney" in str(data_path).lower():
         if "qwen" in str(data_path).lower():
             filename = "raw_data_base_qwen_Chimney.json"
@@ -200,18 +208,20 @@ def raw_data_per_image(data_path):
         print(f"No existing raw data file found at {filename_path}. A new one will be created.")
         values = {}
 
-    df = load_weather_data()
+    df, df_precip = load_weather_data()
 
     wbi_dates = {}
     day_dfs = {}
+    day_dfs_precip = {}
     for image_path in data_path.iterdir():
-        if str(image_path) in values or "mask" not in image_path.name:  # skip mask images
+        if str(image_path) in values or "mask" not in image_path.name:  # skip already processed and mask images
             continue
         try:
             date_str = image_path.name.split('_(')[0].split('_')[0]
             if date_str in wbi_dates:
                 wbi = wbi_dates[date_str]
                 day_df = day_dfs[date_str]
+                day_df_precip = day_dfs_precip[date_str]
             else:
                 wbi_dates[date_str] = get_wbi(date_str)
                 wbi = wbi_dates[date_str]
@@ -219,14 +229,22 @@ def raw_data_per_image(data_path):
                 day_df = df[df["MESS_DATUM"].str.startswith(date_str)].copy()
                 day_dfs[date_str] = day_df
 
+                df_precip["MESS_DATUM"] = df_precip["MESS_DATUM"].astype(str).str.zfill(12)
+                day_df_precip = df_precip[df_precip["MESS_DATUM"].str.startswith(date_str)].copy()
+                day_dfs_precip[date_str] = day_df_precip
+
             time_str = (local_to_utc(image_path.name.split('_(')[0])[:-3] + "0").replace("_", "")
             for i in range(len(day_df)):
                 if time_str in str(day_df.iloc[i]["MESS_DATUM"]):
                     temp, rh = (day_df.iloc[i]["TT_10"], day_df.iloc[i]["RF_10"])
                     break
+            for i in range(len(day_df_precip)):
+                if time_str in str(day_df_precip.iloc[i]["MESS_DATUM"]):
+                    precip = int(day_df_precip.iloc[i]["RWS_IND_10"])
+                    break
             
-            values[str(image_path)] = (wbi, temp, rh, date_str + image_path.name.split('_')[1][:-2])
-            del temp, rh
+            values[str(image_path)] = (wbi, temp, rh, precip, date_str + image_path.name.split('_')[1][:-2])
+            del temp, rh, precip
         except Exception as e:
             print(f"Error processing {image_path.name}: {e}")
             continue
@@ -493,15 +511,15 @@ def find_cutoffs(raw_data):
 if __name__ == "__main__":
     data_path = Path(r"\\netappn1\SCS\50_Abteilungen\54_RSA\Sicherheitsforschung\smart_forrest_fire\Images\Smoke_T=0.5_VLM\Forestfire\cropped")
     data_path = Path(r"\\netappn1\SCS\50_Abteilungen\54_RSA\Sicherheitsforschung\smart_forrest_fire\Images\Smoke_T=0.5_VLM\Chimney_cloud_fog_industrial\cropped")
+    # raw_data_per_image(data_path)
+    update_all()
 
-    # update_all()
+    # with open("raw_data_Forestfire.json", "r") as f:
+    #     raw_data = json.load(f)
 
-    with open("raw_data_Forestfire.json", "r") as f:
-        raw_data = json.load(f)
+    # # find_cutoffs(raw_data)
 
-    # find_cutoffs(raw_data)
+    # # plot_dew_point_data(raw_data, start_end_date=(datetime(2026, 5, 1), datetime.now()))
 
-    # plot_dew_point_data(raw_data, start_end_date=(datetime(2026, 5, 1), datetime.now()))
-
-    plot_frequencies(raw_data, start_end_date=(datetime(2026, 5, 1), datetime.now()))
+    # plot_frequencies(raw_data, start_end_date=(datetime(2026, 5, 1), datetime.now()))
 
