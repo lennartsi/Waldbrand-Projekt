@@ -44,9 +44,10 @@ healthchecks_uuid = os.getenv("HC_UUID")
 healthchecks = HealthchecksMonitor(healthchecks_uuid) if healthchecks_uuid else None
 
 subscribers = cfg.telegram.subscribers
+testers = cfg.telegram.testers
 BOT_TOKEN = cfg.telegram.bot_token
 try:
-    telegram_bot = TelegramBot(bot_token=BOT_TOKEN, subscribers=subscribers)
+    telegram_bot = TelegramBot(bot_token=BOT_TOKEN, subscribers=subscribers, testers=testers)
 except Exception as e:
     logger.error(f"Failed to initialize Telegram bot: {e}")
 
@@ -117,12 +118,20 @@ try:
                             print(f"Alarm package created: {alarm_package}")
                             telegram_bot.register_alert_context(
                                 alert_id=alarm_package["alert_id"],
+                                timestamp=detection_data["timestamp"],
                                 **{k: v for k, v in alarm_package.items() if k != "alert_id"}
                             )
+                            if telegram_bot.too_many_alerts_check():
+                                send_to_testers_only = True
                             telegram_bot.send_review_sync(
                                 cam=cam,
                                 alarm_package=alarm_package,
+                                send_to_testers_only=send_to_testers_only,
                             )
+                        else:
+                            non_alarm_log_path = image_paths['forestfire'] / "non_alarm_log.txt"
+                            with non_alarm_log_path.open("a", encoding="utf-8") as f:
+                                f.write(f"{datetime.datetime.now()}: Detection at Pos. {cam.translate_in_cam_preset(pos_value)} but no alarm triggered (Temp: {temp}°C, RH: {rh}%, Precip: {precipitation}mm)\n")
                         logger.log_detection(cam, alarm, pos_value, temp=temp, rh=rh, precip=precipitation)
                     time.sleep(time_interval)
                     if healthchecks:

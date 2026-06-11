@@ -1,5 +1,5 @@
 import os
-from datetime import datetime
+from datetime import datetime, timedelta
 from contextlib import ExitStack
 import logging
 import asyncio
@@ -8,7 +8,7 @@ from telegram import Bot, InlineKeyboardButton, InlineKeyboardMarkup, InputMedia
 from detection_cutoff import detection_logic
 from telegram.ext import ApplicationBuilder, CallbackQueryHandler, CommandHandler
 
-logger = logging.getLogger()
+logger = logging.getLogger("telegram_bot")
 
 
 async def handle_callback(update, context):
@@ -96,7 +96,7 @@ async def handle_review_command(update, context):
 
 
 class TelegramBot:
-    def __init__(self, bot_token, subscribers: list[int], review_threshold = 2):
+    def __init__(self, bot_token, subscribers: list[int], testers: list[int], review_threshold = 2):
         """
         Initialize the TelegramBot with a bot token and subscribers file.
 
@@ -109,6 +109,7 @@ class TelegramBot:
 
         self.bot_token: str = bot_token
         self.subscribers = subscribers
+        self.testers = testers
         self.bot = Bot(token=self.bot_token)
         self.review_threshold = review_threshold
         self.application = None
@@ -201,6 +202,7 @@ class TelegramBot:
         self,
         cam,
         alarm_package: dict,
+        send_to_testers_only = False,
         # image_paths: Union[str, Sequence[str]] = None,
         # alert_id: Optional[Union[int, str]] = None,
         # position=None,
@@ -269,11 +271,19 @@ class TelegramBot:
         
         self.review_votes[alert_id] = {"fire": 0, "nofire": 0, "unclear": 0, "voters": set()}
 
-        logger.info(f"Starting broadcast to {len(self.subscribers)} subscribers.")
+        # logger.info(f"Starting broadcast to {len(self.subscribers)} subscribers.")
 
         fresh_bot = Bot(token=self.bot_token)
+
+        if send_to_testers_only:
+            target_chat_ids = self.testers
+            logger.info(f"Sending review to testers only: {target_chat_ids}")
+            vote_prompt = "TESTERS ONLY. Please vote:"
+        else:
+            target_chat_ids = self.subscribers
+            logger.info(f"Sending review to all subscribers: {target_chat_ids}")
         try:
-            for chat_id in self.subscribers:
+            for chat_id in target_chat_ids:
                 try:
                     if len(media_paths) > 1:
                         with ExitStack() as stack:
@@ -317,6 +327,7 @@ class TelegramBot:
         # precip=None,
         # caption: Optional[str] = None,
         alarm_package: dict,
+        send_to_testers_only = False,
     ):
         return asyncio.run(
             self.send_review(
@@ -329,6 +340,7 @@ class TelegramBot:
                 # precip=precip,
                 # caption=caption,
                 alarm_package=alarm_package,
+                send_to_testers_only=send_to_testers_only,
             )
         )
 
@@ -427,7 +439,15 @@ class TelegramBot:
         
         self.broadcast_sync(caption, image_path)
 
-
+    def too_many_alerts_check(self):
+        alerts_last_30min = 0
+        for alert_id, context in self.alert_contexts.items():
+            if context["timestamp"]<datetime.now()-timedelta(minutes=30):
+                alerts_last_30min += 1
+        if alerts_last_30min >= 3:
+            return True
+        return False
+        
 if __name__ == "__main__":
     BOT_TOKEN = os.getenv("BOT_TOKEN")
     bot_obj = TelegramBot(BOT_TOKEN, subscribers = [5894386665])
